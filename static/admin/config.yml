@@ -29,7 +29,7 @@ collections:
 
   - name: "presentation"
     label: "Presentation"
-    folder: "src/pages/presentation"
+    folder: "src/pages/presentations"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
