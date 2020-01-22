@@ -14,7 +14,7 @@ export const PresentationTemplate = ({
   title,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content
+  const PresentationContent = contentComponent || Content
 
   return (
     <section className="section">
