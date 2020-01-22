@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { PresentationTemplate } from '../../templates/presentations'
+import { PresentationTemplate } from '../../templates/presentation'
 
 const PresentationPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
