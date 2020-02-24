@@ -10,17 +10,25 @@ export const ProjectTemplate = ({
   content,
   contentComponent,
   description,
+  tags,
   title,
   helmet,
+  featuredimage
 }) => {
   const ProjectContent = contentComponent || Content
-
+    console.log(featuredimage)
   return (
     <section className="section">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+            <div className="full-width-image-container margin-top-0"
+          style={{
+            backgroundImage: `url(${featuredimage})`,
+          }}>
+
+            </div>
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -51,6 +59,7 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  featuredimage: PropTypes.string
 }
 
 const Project = ({ data }) => {
@@ -71,7 +80,8 @@ const Project = ({ data }) => {
             />
           </Helmet>
         }
-        title={Project.frontmatter.title}
+        title={project.frontmatter.title}
+        featuredimage={project.frontmatter.featuredimage}
       />
     </Layout>
   )
@@ -86,11 +96,32 @@ Project.propTypes = {
 export default Project
 
 export const pageQuery = graphql`
-  query PRojectByID($id: String!) {
+  query ProjectByID2($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
-      
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        templateKey
+        additionalimage{
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          } 
+        featuredimage{
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          } 
+        featuredproject
+        description
+      }
+      rawMarkdownBody
     }
   }
 `

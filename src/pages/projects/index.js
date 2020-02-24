@@ -10,14 +10,14 @@ export default class ProjectIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/corn.png')`,
+            backgroundImage: `url('/img/gardening.jpg')`,
           }}
         >
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
+              boxShadow: '0.5rem 0 0 purple, -0.5rem 0 0 purple',
+              backgroundColor: 'purple',
               color: 'white',
               padding: '1rem',
             }}
