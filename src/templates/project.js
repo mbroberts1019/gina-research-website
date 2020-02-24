@@ -25,7 +25,9 @@ export const ProjectTemplate = ({
           <div className="column is-10 is-offset-1">
             <div className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url(${featuredimage})`,
+            backgroundImage: `url(${
+                !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
+              })`,
           }}>
 
             </div>

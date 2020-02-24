@@ -20,8 +20,13 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container">
-            <div className="content">
+        <div className="full-width-image-container margin-top-0"
+          style={{
+            backgroundImage: `url('/img/wheat.jpg')`,
+          }}>
+          
+            
+            <div className="homepage-title">
               <h1>HomePage!!!!</h1>
               
             </div>
