@@ -16,7 +16,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ```
 let sassTeacherAboutAssignment = new SassArray
-sassTeacherAboutAssignment.complaints = ['stupid','off topic', 'inherently chauvinistic', 'waste of my time']
+sassTeacherAboutAssignment.complaints = [
+  'stupid',
+  'off topic',
+  'inherently chauvinistic',
+  'waste of my time'
+]
 forEach(sassTeacherAboutAssignment.complaints){
   console.log(complaint)
 }
