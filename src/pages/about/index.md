@@ -15,7 +15,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### Sustainable farming + Data
 
 ```
-let sassTeacherAboutAssignment = new SassArray
+let sassTeacherAboutAssignment = new SassObject
 sassTeacherAboutAssignment.complaints = [
   'stupid',
   'off topic',
