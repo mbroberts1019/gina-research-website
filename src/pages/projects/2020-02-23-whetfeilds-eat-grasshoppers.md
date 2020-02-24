@@ -10,5 +10,7 @@ additionalimage: /img/farmer.jpg
 # The long and storied tale of Magnus the wheatfarmer
 
 
-```let magnus = Farmer.new
-   magnus.feilds = 19``` 
+```
+let magnus = Farmer.new
+magnus.feilds = 19
+``` 
