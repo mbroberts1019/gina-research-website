@@ -61,7 +61,7 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.string
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 }
 
 const Project = ({ data }) => {
