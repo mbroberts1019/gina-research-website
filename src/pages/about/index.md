@@ -1,18 +1,15 @@
 ---
 templateKey: about-page
-title: I making you a thing
+title: Sustainable Agriculture + Data
 ---
-### Hello Virginia
+### Public Research
+I am currently a PhD student at Iowa State University, studying under the tutelage of Drs. Sotirios Archontoulis and Matt Liebman. Generally, I'm interested in examining the impacts of diversifying crop rotations to include more than two crops (which is more of an alteration than a rotation). I use R and APSIM to help with these endeavors. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Farmer Collaborators
+We are lucky in Ames to have the [Practical Farmers of Iowa](https://practicalfarmers.org/) close by, so I often rely on them to connect me with farmers for some aspects of my research. 
 
-### You can do markdown stuff
-
-* Loerm
-* Ipsum
-* Jelly belly
-
-### Sustainable farming + Data
+### Teaching
+I developed a new class at Iowa State University to help ease students into using R in a welcoming environment. And by using R I mean using the [tidyverse!](https://www.tidyverse.org/) We even have our own hexsticker to show we are Rgronomists (see Teaching tab for more info).  
 
 ```
 let sassTeacherAboutAssignment = new SassObject
@@ -27,4 +24,3 @@ forEach(sassTeacherAboutAssignment.complaints){
 }
 ```
 
-[Link to PFOI](https://practicalfarmers.org/)
