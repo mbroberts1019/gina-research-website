@@ -27,12 +27,21 @@ $purple: #4B0082
     margin-bottom: 1.5rem
     margin-top: 0
 
-.homepage-title
-  font-size: 5rem
+.homepage-banner
+  
   color: white
   background-size: cover
   background-position: bottom
   bachground-color: purple
+
+.homepage-title
+  background: rgba($black,0.65);
+  color: rgba(207,241,239,1)
+  width: 100%
+  padding: 20px
+  height: 20%
+  font-size: 4rem
+  font-weight: 700
   
 
 // Helper Classes
@@ -88,8 +97,15 @@ $purple: #4B0082
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 1rem 0rem 0rem
   background-color: $purple
+  height: 100%
+
+.copywrite
+  width: 100%
+  padding: 0rem 0rem 1rem
+  background-color: $purple
+  color: grey
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -107,8 +123,16 @@ $menu-label-color: $white-ter
 .menu-list
   list-style: none !important
   text-align: left
+  vertical-align: middle
+  display: flex
+  align-items: baseline
+  justify-content: flex-start
+  font-size: 1rem
+  //padding: 1em
+  margin: auto
 .social
-  padding: 2em
+  margin: auto
+  
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em

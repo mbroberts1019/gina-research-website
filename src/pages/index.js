@@ -8,6 +8,7 @@ function encode(data) {
     .join('&')
 }
 
+
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
@@ -26,9 +27,10 @@ export default class Index extends React.Component {
           }}>
           
             
-            <div className="homepage-title">
-              <h1>HomePage!!!!</h1>
-              
+            <div className="homepage-banner">
+              <div className="homepage-title">
+              Scientist and Winter Biker
+              </div>
             </div>
           </div>
         </section>

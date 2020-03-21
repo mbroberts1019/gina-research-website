@@ -14,8 +14,8 @@ const Footer = class extends React.Component {
         <div className="content has-text-centered  has-text-white-ter">
           <div className="container has-text-white-ter">
             <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
+              <div className="column is-6">
+                <section className="row menu">
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
@@ -32,18 +32,6 @@ const Footer = class extends React.Component {
                         Projects
                       </Link>
                     </li>
-                    
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
                     <li>
                       <a
                         className="navbar-item"
@@ -54,10 +42,12 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
+                    
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
+              
+              <div className="row is-1 social">
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -88,7 +78,11 @@ const Footer = class extends React.Component {
                   />
                 </a>
               </div>
+              
             </div>
+            <div className="copywrite">
+                <p>© 2020 mikercodemonster</p>
+              </div>
           </div>
         </div>
       </footer>
