@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: 'Wheat fields Eat Grasshoppers '
+title: 'Wheat fields eat grasshoppers '
 date: 2020-02-23T23:26:20.695Z
 description: A study of grasshopper murder
 featuredproject: true
