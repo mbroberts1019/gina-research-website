@@ -1,3 +1,4 @@
+//jshint esversion: 6
 import React from 'react'
 import PropTypes from 'prop-types'
 import { AboutPageTemplate } from '../../templates/about-page'
@@ -17,3 +18,5 @@ AboutPagePreview.propTypes = {
 }
 
 export default AboutPagePreview
+
+
