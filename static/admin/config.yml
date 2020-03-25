@@ -19,12 +19,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Project", name: "featuredproject", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Project", name: "featuredproject", widget: "boolean"}
       - {label: "Additional Image", name: "additionalimage", widget: image}   
   - name: "pages"
     label: "Pages"

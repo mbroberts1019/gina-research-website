@@ -5,15 +5,16 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const ProjectTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
   helmet,
-  featuredimage
+  featuredimage,
+  additionalimage
 }) => {
   const ProjectContent = contentComponent || Content
     console.log(featuredimage)
@@ -36,18 +37,15 @@ export const ProjectTemplate = ({
             </h1>
             <p>{description}</p>
             <ProjectContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+            <div className="half-width-image"
+            style={{
+              backgroundImage: `url(${
+                  !!additionalimage.childImageSharp ? additionalimage.childImageSharp.fluid.src : additionalimage
+                })`,
+            }}>
+            
+              
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +59,8 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  additionalimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 }
 
 const Project = ({ data }) => {
@@ -84,6 +83,7 @@ const Project = ({ data }) => {
         }
         title={project.frontmatter.title}
         featuredimage={project.frontmatter.featuredimage}
+        additionalimage={project.frontmatter.additionalimage}
       />
     </Layout>
   )
@@ -91,9 +91,15 @@ const Project = ({ data }) => {
 
 Project.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
   }),
 }
+
+
+
+
 
 export default Project
 
