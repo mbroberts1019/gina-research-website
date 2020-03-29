@@ -15,23 +15,16 @@ export default class Index extends React.Component {
     this.state = { isValidated: false }
   }
 
-  
+
 
   render() {
     return (
       <Layout>
-        <section className="section">
-        <div className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/wheat.jpg')`,
-          }}>
-          
-            
-            <div className="homepage-banner">
-              <div className="homepage-title">
-              Scientist and Winter Biker
-              </div>
-            </div>
+        <section>
+          <div className="homepage-banner margin-top-0"
+            style={{
+              backgroundImage: `url('/img/banner-no-periods.PNG')`,
+            }}>
           </div>
         </section>
       </Layout>
