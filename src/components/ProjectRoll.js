@@ -14,13 +14,13 @@ class ProjectRoll extends React.Component {
           projects.map(({ node: project }) => (
             <div className="is-parent column is-6" key={project.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+                className={`blog-list-item tile is-child box  ${
                   project.frontmatter.featuredproject ? 'is-featured' : ''
-                }`}
+                  }`}
               >
                 <header>
                   {project.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div className="featured-thumbnail row is-1">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: project.frontmatter.featuredimage,
@@ -29,23 +29,21 @@ class ProjectRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="project-meta">
+                  <p className="project-meta row is-1">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title .project-title"
                       to={project.fields.slug}
                     >
                       {project.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {project.frontmatter.date}
-                    </span>
+
                   </p>
                 </header>
+
                 <p>
-                  {project.excerpt}
-                  <br />
-                  <br />
+                  <span className="subtitle is-size-5 is-block">
+                    {project.frontmatter.description}
+                  </span>
                   <Link className="button" to={project.fields.slug}>
                     Keep Reading →
                   </Link>

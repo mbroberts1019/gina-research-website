@@ -4,13 +4,19 @@
 
 $body-color: #333
 $black: #2b2523
-$purple: #4B0082
+$primary-color: #10375c
+$title-color: #380463
+$link-item-color: #f5f1f1
+$link-item-hover-color: #0febe0
+$navbar-background-color: $primary-color
+$navbar-item-color: $link-item-color
+$navbar-item-hover-color: $link-item-hover-color
 
 .navbar .navbar-menu
   box-shadow:none !important
 
 .footer
-  background-color: $purple
+  background-color: $primary-color
   margin: 0 auto 0
 
 .content .taglist
@@ -33,10 +39,10 @@ $purple: #4B0082
   color: white
   background-size: cover
   background-position: bottom
-  bachground-color: purple
+  bachground-color: $primary-color
 
 .homepage-title
-  background: rgba($black,0.65);
+  background: rgba($black,0.65)
   color: rgba(207,241,239,1)
   width: 100%
   padding: 20px
@@ -98,7 +104,7 @@ $purple: #4B0082
   margin-top: 0 !important
 
 .navbar-item .icon
-  color: $purple
+  color: $primary-color
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -106,25 +112,27 @@ $purple: #4B0082
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+
+
 footer.footer
   padding: 1rem 0rem 0rem
-  background-color: $purple
+  background-color: $primary-color
   height: 100%
   
 
 .copywrite
   width: 100%
   padding: 1.5rem 0rem 1rem
-  background-color: $purple
+  background-color: $primary-color
   color: grey
 
 //Menu overrides
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $purple
-$menu-item-active-background-color:	$purple
-$menu-list-border-left: 1px solid $purple
+$menu-item-active-color: $primary-color
+$menu-item-active-background-color:	$primary-color
+$menu-list-border-left: 1px solid $primary-color
 $menu-label-color: $white-ter
 
 
@@ -142,19 +150,21 @@ $menu-label-color: $white-ter
   //padding: 1em
   margin: auto
 
+// project roll
+.project-title
+  color: $title-color
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #00d67d33
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
+  text-align: center
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
-
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only
