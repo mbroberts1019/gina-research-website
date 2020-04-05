@@ -9,16 +9,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
-      <div className="container">
+      <div className="container margin-top-0">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-            <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/equation.jpg')`,
-          }}
-        ></div>
+              <div
+                className="half-width-image-container margin-top-0"
+                style={{
+                  backgroundImage: `url('/img/equation.jpg')`,
+                }}
+              ></div>
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
