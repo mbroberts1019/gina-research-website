@@ -4,20 +4,28 @@
 
 $body-color: #333
 $black: #2b2523
+$dark-grey: #292F33
+$light-grey: #4B545D
+$orange: #F07240
+$yellow: #fbd65b
+$yellow-fade: #fbd65b9f
+$green: #5C903F
 $primary-color: #10375c
-$title-color: #380463
+$title-color: $orange
 $link-item-color: #f5f1f1
-$link-item-hover-color: #0febe0
-$navbar-background-color: $primary-color
+$link-item-hover-color: $orange
+$navbar-background-color: $dark-grey
 $navbar-item-color: $link-item-color
 $navbar-item-hover-color: $link-item-hover-color
+$section-padding: 1rem 1.5rem
 
 .navbar .navbar-menu
   box-shadow:none !important
 
 .footer
-  background-color: $primary-color
+  background-color: $light-grey
   margin: 0 auto 0
+  max-height: 25px
 
 .content .taglist
   list-style: none
@@ -66,6 +74,19 @@ $navbar-item-hover-color: $link-item-hover-color
   left: 50%
   right: 50%
   margin: 2em -50vw
+  background-size: cover
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.half-width-image-container
+  width: 50vw
+  height: 250px
+  position: relative
+  // left: 50%
+  // right: 50%
+  margin: 0 auto 1rem
   background-size: cover
   background-position: center
   display: flex
@@ -122,16 +143,14 @@ $navbar-item-hover-color: $link-item-hover-color
 
 
 footer.footer
-  padding: 1rem 0rem 0rem
-  background-color: $primary-color
-  height: 100%
+  background-color: $light-grey
+  height: 50px
   
 
 .copywrite
   width: 100%
-  padding: 1.5rem 0rem 1rem
-  background-color: $primary-color
-  color: grey
+  padding: .25rem 0rem .25rem
+  color: $dark-grey
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -162,7 +181,8 @@ $menu-label-color: $white-ter
   color: $title-color
 // blog roll
 .blog-list-item.is-featured
-  background-color: #00d67d33
+  background-color: $yellow-fade
+  
 .blog-list-item header
   display: flex
   margin-bottom: 1em
