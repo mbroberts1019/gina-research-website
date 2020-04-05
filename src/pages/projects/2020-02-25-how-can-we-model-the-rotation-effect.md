@@ -1,6 +1,6 @@
 ---
 templateKey: project
-featuredimage: /img/corn-soybean-rotation.jpg
+featuredimage: /img/projtile-5.PNG
 title: How can we model the rotation effect?
 date: 2020-02-25T03:57:22.703Z
 description: >-
