@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
+import getJokes from '../dad_jokes/dadJokes'
 
 function encode(data) {
   return Object.keys(data)
@@ -12,10 +13,23 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = { 
+      isValidated: false, 
+      joke: {
+        "setup": 'null',
+        "punchline": 'null' 
+      }
+    }
   }
 
 
+  componentWillMount(){
+    let joke = getJokes()
+    this.setState(
+      this.state.joke = joke
+    )
+    
+  }
 
   render() {
     return (
@@ -35,6 +49,19 @@ export default class Index extends React.Component {
                 backgroundImage: `url('/img/hometile-3.PNG')`,
               }}></div>
           </div>
+        </section>
+        <section>
+          <div className="dad-joke-container">
+            {!this.state.joke.setup ? null : 
+            <div className="dad-joke-question">
+              {this.state.joke.setup}
+            </div>}
+            {!this.state.joke.punchline | !this.state.joke.setup ? null : 
+            <div className="dad-joke-answer">
+              {this.state.joke.punchline}
+            </div>}
+          </div>
+
         </section>
       </Layout>
     )
