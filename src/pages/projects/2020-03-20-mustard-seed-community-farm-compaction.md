@@ -1,7 +1,7 @@
 ---
 templateKey: project
 featuredimage: /img/projtile-3.PNG
-title: Mustard Seed Community Farm Compaction
+title: Does Mustard Seed Community Farm have compaction issues?
 date: 2020-03-20T01:33:13.767Z
 description: >-
   I volunteer at Mustard Seed Community Farm most summers. They give me
