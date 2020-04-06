@@ -64,7 +64,26 @@ $section-padding: 1rem 1.5rem
   height: 20%
   font-size: 4rem
   font-weight: 700
+
+.home-banner-tile
+  height: 60vh
+  width: 60vh
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  flex: 1 0 auto
+  padding: 0
+  margin: 0
+
+.three-tile-container
+  display: flex
+  flex-direction: row
+  align-items: center
+  width: 100%
+  flex-wrap: wrap
+  justify-content: center
   
+
 
 // Helper Classes
 .full-width-image-container
@@ -92,6 +111,16 @@ $section-padding: 1rem 1.5rem
   display: flex
   justify-content: center
   align-items: center
+
+.project-main-image-container
+  width: 25vw
+  height: 250px
+  margin: 0 auto 1rem
+  background-size: contain
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center 
 
 .full-width-image
     width: 100vw
@@ -141,6 +170,27 @@ $section-padding: 1rem 1.5rem
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 
+.project-banner
+  display: flex
+  flex-direction: row
+
+.project-banner-text
+  padding: 1rem 1rem 0
+  flex-basis: 2
+  text-align: center
+
+.project-banner-image-container
+  width: 40vw
+  height: 30vh
+  margin: 0 auto 1rem
+  background-size: contain
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center 
+  flex-basis: 2
+  background-repeat: no-repeat
+
 
 footer.footer
   background-color: $light-grey
@@ -187,7 +237,11 @@ $menu-label-color: $white-ter
   display: flex
   margin-bottom: 1em
   text-align: center
-.blog-list-item .featured-thumbnail
+.blog-list-item 
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
+
+.featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
 

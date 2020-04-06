@@ -17,35 +17,29 @@ export const ProjectTemplate = ({
   additionalimage
 }) => {
   const ProjectContent = contentComponent || Content
-    console.log(featuredimage)
+  console.log(featuredimage)
   return (
     <section className="section">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url(${
-                !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
-              })`,
-          }}>
-
+            <div className="project-banner">
+              <div className="project-banner-image-container margin-top-0"
+                style={{
+                  backgroundImage: `url(${
+                    !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
+                    })`,
+                }}>
+              </div>
+              <div className='project-banner-text'>
+                <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                  {title}
+                </h1>
+                <h4>{description}</h4>
+              </div>
             </div>
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
             <ProjectContent content={content} />
-            <div className="half-width-image"
-            style={{
-              backgroundImage: `url(${
-                  !!additionalimage.childImageSharp ? additionalimage.childImageSharp.fluid.src : additionalimage
-                })`,
-            }}>
-            
-              
-            </div>
           </div>
         </div>
       </div>

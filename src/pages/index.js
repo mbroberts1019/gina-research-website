@@ -21,10 +21,19 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section>
-          <div className="homepage-banner margin-top-0"
-            style={{
-              backgroundImage: `url('/img/banner-no-periods.PNG')`,
-            }}>
+          <div className='three-tile-container'>
+              <div className='home-banner-tile'
+              style={{
+                backgroundImage: `url('/img/hometile-1.PNG')`,
+              }}></div>
+              <div className='home-banner-tile'
+              style={{
+                backgroundImage: `url('/img/hometile-2.PNG')`,
+              }}></div>
+              <div className='home-banner-tile'
+              style={{
+                backgroundImage: `url('/img/hometile-3.PNG')`,
+              }}></div>
           </div>
         </section>
       </Layout>
