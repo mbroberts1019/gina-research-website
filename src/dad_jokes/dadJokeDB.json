@@ -10,6 +10,10 @@
         },
         {
             "setup": "If a child refuses to sleep during nap time, are they guilty of resisting a rest?"  
+        },
+		{
+            "setup": "Want to hear something that will make you smile?",
+            "punchline": "It's primarily the zygomaticus muscles in your face."
         }
     ]
 }
