@@ -61,7 +61,6 @@ export default class Index extends React.Component {
               {this.state.joke.punchline}
             </div>}
           </div>
-
         </section>
       </Layout>
     )
