@@ -25,7 +25,6 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Featured Project", name: "featuredproject", widget: "boolean"}
-      - {label: "Additional Image", name: "additionalimage", widget: image}   
   - name: "pages"
     label: "Pages"
     files:
