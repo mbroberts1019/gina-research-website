@@ -9,6 +9,5 @@ description: >-
   measurements (with some helpers).  I'm processing the data, but expect a Shiny
   App soon....
 featuredproject: true
-additionalimage: /img/field-map-beige.jpg
 ---
 Soil compaction is a real concern for a lot of farmers. The [Archontoulis Lab](https://www.archontoulislab.com/) was generous enough to let me use our penetrometer to measure soil compaction on several fields around Mustard Seed.

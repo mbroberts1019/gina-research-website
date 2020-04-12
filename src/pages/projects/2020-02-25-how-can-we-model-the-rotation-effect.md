@@ -8,6 +8,5 @@ description: >-
   same crop grown continuously yields less than the same crop rotated with
   another. But why is still somewhat of a mystery...
 featuredproject: true
-additionalimage: /img/corn.png
 ---
 Working with crop models can help us examine phenomena in a detailed way. We are trying to parse out the rotation effect into bio-physical effects that can be captured in a process-based model (APSIM).

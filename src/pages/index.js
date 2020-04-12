@@ -36,15 +36,15 @@ export default class Index extends React.Component {
       <Layout>
         <section>
           <div className='three-tile-container'>
-              <div className='home-banner-tile'
+              <div className='home-banner-tile home-banner-tile-1'
               style={{
                 backgroundImage: `url('/img/hometile-1.PNG')`,
               }}></div>
-              <div className='home-banner-tile'
+              <div className='home-banner-tile home-banner-tile-2'
               style={{
                 backgroundImage: `url('/img/hometile-2.PNG')`,
               }}></div>
-              <div className='home-banner-tile'
+              <div className='home-banner-tile home-banner-tile-3'
               style={{
                 backgroundImage: `url('/img/hometile-3.PNG')`,
               }}></div>
