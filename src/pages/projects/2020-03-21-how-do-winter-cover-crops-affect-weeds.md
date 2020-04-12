@@ -8,7 +8,6 @@ description: >-
   quality, but can it also help control weeds? We used a meta-analysis coupled
   with field measurements to see. 
 featuredproject: true
-additionalimage: /img/weed-seedbank-sampling.JPEG
 ---
 The Midwestern region of the United States produces an insane amount of corn - around a third of the world's production comes from these 12 states. Much of that corn is produced using a rotation of corn and soybean, both of which are planted in the spring (April/May) and harvested in the fall (Oct/Nov), leaving the ground bare over the winter.  Using winter cover crops as part of this rotation protects the soil from erosion and soaks up extra nutrients in the spring before the main crop is planted (thus keeping those nutrients out of our water). However, these benefits are hard to monetize.  Many people wonder if cover crops can reduce weed control costs. 
 

@@ -53,8 +53,7 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  additionalimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 }
 
 const Project = ({ data }) => {
@@ -77,7 +76,6 @@ const Project = ({ data }) => {
         }
         title={project.frontmatter.title}
         featuredimage={project.frontmatter.featuredimage}
-        additionalimage={project.frontmatter.additionalimage}
       />
     </Layout>
   )
@@ -106,20 +104,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         templateKey
-        additionalimage{
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          } 
         featuredimage{
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+               ...GatsbyImageSharpFluid
             }
-          } 
+          }
+        } 
         featuredproject
         description
       }

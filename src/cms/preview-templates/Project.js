@@ -9,7 +9,6 @@ const ProjectPreview = ({ entry, widgetFor, getAsset }) => (
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     featuredimage={getAsset(entry.getIn(['data', 'featuredimage', 'image']))}
-    additionalimage={ getAsset(entry.getIn(['data', 'additionalimage', 'src']))}
 
   />
 )
