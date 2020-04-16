@@ -5,8 +5,7 @@
             "punchline": "I will find you. I have contacts."
         },
 		{
-            "setup": "If your boyfriend doesn't appreciate fruit puns, let that mango.",
-            "punchline": " "
+            "setup": "If your boyfriend doesn't appreciate fruit puns, let that mango."
         },
 		{
             "setup": "I switched the labels in my friend's spice cabinet.",
@@ -25,12 +24,10 @@
             "punchline": "I hope you're happy."
         },
 		{
-            "setup": "Cows have hooves because they lactose.",
-            "punchline": " "
+            "setup": "Cows have hooves because they lactose."
         },
 		{
-            "setup": "They are not making yardsticks any longer",
-            "punchline": " "
+            "setup": "They are not making yardsticks any longer."
         },
 		{
             "setup": "Break-in at the Apple store!",
@@ -41,20 +38,17 @@
             "punchline": "Cops have nothing to go on."
         },
 		{
-            "setup": "I call my hourse Mayo and sometimes Mayo neighs.",
-            "punchline": " "
+            "setup": "I call my hourse Mayo and sometimes Mayo neighs."
         },
 		{
-            "setup": "Women's Rights.",
-            "punchline": " "
+            "setup": "Women's Rights."
         },
 		{
             "setup": "What is the biggest lie?",
             "punchline": "I have read this and agree to the Terms of Service."
         },
 		{
-            "setup": "A dyslexic man walks into a bra.",
-            "punchline": " "
+            "setup": "A dyslexic man walks into a bra."
         },
 		{
             "setup": "How do you make a waterbed more bouncy?",
@@ -106,6 +100,9 @@
         },
 		{
             "setup": "Knock knock. Who's there? To. To who? No, it's to 'whom'."
+        },
+		{
+            "setup": "A sea monster ate a ship and was like 'I can't believe I ate the hull thing."
         }
     ]
 }
