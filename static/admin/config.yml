@@ -23,52 +23,48 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Featured Project", name: "featuredproject", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Featured Project", name: "featuredproject", widget: "boolean", required: false}
+      - label: "Sections"
+        name: "sections"
+        required: false
+        widget: "list"
+        fields: 
+          - {label: "Text", name: "text", widget: "markdown"}
+          - label: "Section Image"
+            name: "sectionimage"
+            required: false
+            widget: "object"
+            fields: 
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Description", name: "description", widget: "string" }
+              - {label: "Alt Label", name: "alt", widget: "string" }
+              - {label: "Right Justify", name: "rightjustify", widget: "boolean", required: false}
+              - {label: "Left Justify", name: "leftjustify", widget: "boolean", required: false}
       - label: "Funding"
         name: "funding"
-        widget: "object"
+        required: false
+        widget: "list"
         fields: 
-          - label: "Funder 1"
-            name: "funder1"
-            widget: "object"
-            fields: 
-              - {label: "Funder Image", name: "funderimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
-          - label: "Funder 2"
-            name: "funder2"
-            widget: "object"
-            fields: 
-              - {label: "Funder Image", name: "funderimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
-          - label: "Funder 3"
-            name: "funder3"
-            widget: "object"
-            fields: 
-              - {label: "Funder Image", name: "funderimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
+          - {label: "Funder Name", name: "name", widget: "string"}
+          - {label: "Website", name: "website", widget: "string", required: false}
+          - {label: "Funder Logo", name: "funderimage", widget: image, required: false}
       - label: "Contributors"
         name: "contributors"
-        widget: "object"
+        required: false
+        widget: "list"
         fields:
-          - label: "Contributor 1"
-            name: "contributor1"
-            widget: "object"
-            fields: 
-              - {label: "Contributor Image", name: "contributorimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
-          - label: "Contributor 2"
-            name: "contributor2"
-            widget: "object"
-            fields: 
-              - {label: "Contributor Image", name: "contributorimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
-          - label: "Contributor 3"
-            name: "contributor3"
-            widget: "object"
-            fields: 
-              - {label: "Funder Image", name: "contributorimage", widget: image}
-              - {label: "Name", name: "name", widget: "string" }
+          - {label: "Contributor Name", name: "name", widget: "string" }
+          - {label: "Website", name: "website", widget: "string", required: false }
+          - {label: "Avatar", name: "avatar", widget: image, required: false}
+      - label: "Additional Image"
+        name: "additionalimages"
+        required: false
+        widget: "list"
+        fields:
+          - {label: "Additional Image", name: "additionalimage", widget: image}
+          - {label: "Description", name: "description", widget: "string", required: false }
+          - {label: "Alt Label", name: "alt", widget: "string" }
   - name: "pages"
     label: "Pages"
     files:
