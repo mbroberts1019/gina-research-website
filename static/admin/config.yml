@@ -36,9 +36,9 @@ collections:
             required: false
             widget: "object"
             fields: 
-              - {label: "Image", name: "image", widget: image}
-              - {label: "Description", name: "description", widget: "string" }
-              - {label: "Alt Label", name: "alt", widget: "string" }
+              - {label: "Image", name: "image", widget: image, required: false}
+              - {label: "Description", name: "description", widget: "string", required: false }
+              - {label: "Alt Label", name: "alt", widget: "string", required: false }
               - {label: "Right Justify", name: "rightjustify", widget: "boolean", required: false}
               - {label: "Left Justify", name: "leftjustify", widget: "boolean", required: false}
       - label: "Funding"
