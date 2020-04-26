@@ -25,6 +25,50 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Featured Project", name: "featuredproject", widget: "boolean"}
+      - label: "Funding"
+        name: "funding"
+        widget: "object"
+        fields: 
+          - label: "Funder 1"
+            name: "funder1"
+            widget: "object"
+            fields: 
+              - {label: "Funder Image", name: "funderimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
+          - label: "Funder 2"
+            name: "funder2"
+            widget: "object"
+            fields: 
+              - {label: "Funder Image", name: "funderimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
+          - label: "Funder 3"
+            name: "funder3"
+            widget: "object"
+            fields: 
+              - {label: "Funder Image", name: "funderimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
+      - label: "Contributors"
+        name: "contributors"
+        widget: "object"
+        fields:
+          - label: "Contributor 1"
+            name: "contributor1"
+            widget: "object"
+            fields: 
+              - {label: "Contributor Image", name: "contributorimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
+          - label: "Contributor 2"
+            name: "contributor2"
+            widget: "object"
+            fields: 
+              - {label: "Contributor Image", name: "contributorimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
+          - label: "Contributor 3"
+            name: "contributor3"
+            widget: "object"
+            fields: 
+              - {label: "Funder Image", name: "contributorimage", widget: image}
+              - {label: "Name", name: "name", widget: "string" }
   - name: "pages"
     label: "Pages"
     files:
