@@ -22,15 +22,15 @@ export const ProjectTemplate = ({
   const ProjectContent = contentComponent || Content
   const SectionContent = contentComponent || Content
 
-  
+
   console.log(contributors)
-  
+
   return (
     <section className="section">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column project-main">
             <div className="project-banner">
               <div className="project-banner-image-container margin-top-0"
                 style={{
@@ -46,68 +46,69 @@ export const ProjectTemplate = ({
                 <h4>{description}</h4>
               </div>
             </div>
-            
+
             <div className='project-main'>
               <ProjectContent content={content} />
-              
-              {sections ? sections.map((section, index)=>{
+
+              {sections ? sections.map((section, index) => {
                 console.log(section.sectionimage) //remove
-                if (section.sectionimage){
+                if (section.sectionimage) {
                   return (
-                  
-                    <div key= {index}>
-                      <SectionContent content={section.text}/>
-                  
+
+                    <div key={index}>
+                      <SectionContent content={section.text} />
+
                       <div className="project-banner-image-container margin-top-0"
-                        style ={{
+                        style={{
                           backgroundImage: `url(${
                             !!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid.src : section.sectionimage.image
                             })`,
                         }}></div>
                     </div>
-                  )}else{
-                    return(
-                      <div key= {index}>
-                    <SectionContent content={section.text}/>
+                  )
+                } else {
+                  return (
+                    <div key={index}>
+                      <SectionContent content={section.text} />
                     </div>
-                    )
-                  }
-              }): null}
+                  )
+                }
+              }) : null}
             </div>
           </div>
-          
-          {(funding || contributors) && <div className='project-sidebar column'>
-              <div className="project-sidebar-title">Funded by:</div>
-              {funding ? funding.map((funder, index)=>{
-                return (
-                  <div key={index} className='project-funder'>
-                    <div className="project-funder-image-container margin-top-0"
-                        style ={{
-                          backgroundImage: `url(${
-                            !!funder.funderimage.childImageSharp ? funder.funderimage.childImageSharp.fluid.src : funder.funderimage.image
-                            })`,
-                        }}></div>
-                    <div className="project-sidebar-name">{funder.name}</div>
-                    
-                  </div>
-                )
-              }) : null} 
-              <div className="project-sidebar-title">Collaborators:</div>
-              {contributors ? contributors.map((contributor, index)=>{
-                return (
-                  <div key={index} className='project-funder'>
-                    <div className="project-contributor-image-container margin-top-0"
-                        style ={{
-                          backgroundImage: `url(${
-                            !!contributor.avatar.childImageSharp ? contributor.avatar.childImageSharp.fluid.src : contributor.avatar.image
-                            })`,
-                        }}></div>
-                    <div className="project-sidebar-name">{contributor.name}</div>
-                    
-                  </div>
-                )
-              }) : null} 
-          </div> }
+
+          {(funding || contributors) && <div className='project-sidebar column is-2'>
+            <div className="project-sidebar-title">Funded by:</div>
+            {funding ? funding.map((funder, index) => {
+              return (
+                <div key={index} className='project-funder'>
+                  <div className="project-funder-image-container margin-top-0"
+                    style={{
+                      backgroundImage: `url(${
+                        !!funder.funderimage.childImageSharp ? funder.funderimage.childImageSharp.fluid.src : funder.funderimage.image
+                        })`,
+                    }}></div>
+                  <div className="project-sidebar-name">{funder.name}</div>
+
+                </div>
+              )
+            }) : null}
+            <div className="project-sidebar-title">Collaborators:</div>
+            {contributors ? contributors.map((contributor, index) => {
+              return (
+                <div key={index} className='project-funder'>
+                  <div className="project-contributor-image-container margin-top-0"
+                    style={{
+                      backgroundImage: `url(${
+                        !!contributor.avatar.childImageSharp ? contributor.avatar.childImageSharp.fluid.src : contributor.avatar.image
+                        })`,
+                    }}></div>
+                  <div className="project-sidebar-name">{contributor.name}</div>
+
+                </div>
+              )
+            }) : null}
+          </div>}
 
 
 
