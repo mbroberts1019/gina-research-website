@@ -15,14 +15,16 @@ export const ProjectTemplate = ({
   helmet,
   featuredimage,
   additionalimage,
-  sections
+  sections,
+  funding,
+  contributors
 }) => {
   const ProjectContent = contentComponent || Content
   const SectionContent = contentComponent || Content
 
-  console.log(featuredimage)
-  console.log(sections)
-  console.log(content)
+  
+  console.log(contributors)
+  
   return (
     <section className="section">
       {helmet || ''}
@@ -44,33 +46,70 @@ export const ProjectTemplate = ({
                 <h4>{description}</h4>
               </div>
             </div>
-            <ProjectContent content={sections[0].text} />
             
-            {sections.map((section, index)=>{
-              console.log(section.sectionimage)
-              if (section.sectionimage){
-                return (
-                
-                  <div key= {index}>
-                  <SectionContent content={section.text}/>
-                
-                  <div className="project-banner-image-container margin-top-0"
-                    style ={{
-                      backgroundImage: `url(${
-                        !!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid.src : section.sectionimage.image
-                        })`,
-                      }}></div>
-                  </div>
-                )}else{
-                  return(
+            <div className='project-main'>
+              <ProjectContent content={content} />
+              
+              {sections ? sections.map((section, index)=>{
+                console.log(section.sectionimage) //remove
+                if (section.sectionimage){
+                  return (
+                  
                     <div key= {index}>
-                  <SectionContent content={section.text}/>
-                  </div>
-                  )
-                }
-            })}
-
+                      <SectionContent content={section.text}/>
+                  
+                      <div className="project-banner-image-container margin-top-0"
+                        style ={{
+                          backgroundImage: `url(${
+                            !!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid.src : section.sectionimage.image
+                            })`,
+                        }}></div>
+                    </div>
+                  )}else{
+                    return(
+                      <div key= {index}>
+                    <SectionContent content={section.text}/>
+                    </div>
+                    )
+                  }
+              }): null}
+            </div>
           </div>
+          
+          {(funding || contributors) && <div className='project-sidebar column'>
+              <div className="project-sidebar-title">Funded by:</div>
+              {funding.map((funder, index)=>{
+                return (
+                  <div key={index} className='project-funder'>
+                    <div className="project-funder-image-container margin-top-0"
+                        style ={{
+                          backgroundImage: `url(${
+                            !!funder.funderimage.childImageSharp ? funder.funderimage.childImageSharp.fluid.src : funder.funderimage.image
+                            })`,
+                        }}></div>
+                    <h3>{funder.name}</h3>
+                    
+                  </div>
+                )
+              })} 
+              {contributors.map((contributor, index)=>{
+                return (
+                  <div key={index} className='project-funder'>
+                    <div className="project-funder-image-container margin-top-0"
+                        style ={{
+                          backgroundImage: `url(${
+                            !!contributor.avatar.childImageSharp ? contributor.avatar.childImageSharp.fluid.src : contributor.avatar.image
+                            })`,
+                        }}></div>
+                    <h3>{contributor.name}</h3>
+                    
+                  </div>
+                )
+              })} 
+          </div> }
+
+
+
         </div>
       </div>
     </section>
@@ -84,7 +123,9 @@ ProjectTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  sections: PropTypes.array
+  sections: PropTypes.array,
+  funding: PropTypes.array,
+  contributors: PropTypes.array
 }
 
 const Project = ({ data }) => {
@@ -108,6 +149,8 @@ const Project = ({ data }) => {
         title={project.frontmatter.title}
         featuredimage={project.frontmatter.featuredimage}
         sections={project.frontmatter.sections}
+        funding={project.frontmatter.funding}
+        contributors={project.frontmatter.contributors}
       />
     </Layout>
   )
@@ -155,6 +198,28 @@ export const pageQuery = graphql`
                 }   
               }
             }
+          }
+        }
+        funding {
+          name
+          website
+          funderimage {
+            childImageSharp{
+              fluid(maxWidth: 2048, quality: 100) {
+                 ...GatsbyImageSharpFluid
+              }   
+            }
+          }
+        }
+        contributors {
+          name
+          website
+          avatar {
+            childImageSharp{
+              fluid(maxWidth: 2048, quality: 100) {
+                 ...GatsbyImageSharpFluid
+              }
+            }   
           }
         }
       }
