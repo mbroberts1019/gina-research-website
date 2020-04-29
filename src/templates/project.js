@@ -14,10 +14,15 @@ export const ProjectTemplate = ({
   title,
   helmet,
   featuredimage,
-  additionalimage
+  additionalimage,
+  sections
 }) => {
   const ProjectContent = contentComponent || Content
+  const SectionContent = contentComponent || Content
+
   console.log(featuredimage)
+  console.log(sections)
+  console.log(content)
   return (
     <section className="section">
       {helmet || ''}
@@ -39,7 +44,32 @@ export const ProjectTemplate = ({
                 <h4>{description}</h4>
               </div>
             </div>
-            <ProjectContent content={content} />
+            <ProjectContent content={sections[0].text} />
+            
+            {sections.map((section, index)=>{
+              console.log(section.sectionimage)
+              if (section.sectionimage){
+                return (
+                
+                  <div key= {index}>
+                  <SectionContent content={section.text}/>
+                
+                  <div className="project-banner-image-container margin-top-0"
+                    style ={{
+                      backgroundImage: `url(${
+                        !!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid.src : section.sectionimage.image
+                        })`,
+                      }}></div>
+                  </div>
+                )}else{
+                  return(
+                    <div key= {index}>
+                  <SectionContent content={section.text}/>
+                  </div>
+                  )
+                }
+            })}
+
           </div>
         </div>
       </div>
@@ -53,7 +83,8 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  sections: PropTypes.array
 }
 
 const Project = ({ data }) => {
@@ -76,6 +107,7 @@ const Project = ({ data }) => {
         }
         title={project.frontmatter.title}
         featuredimage={project.frontmatter.featuredimage}
+        sections={project.frontmatter.sections}
       />
     </Layout>
   )
@@ -88,10 +120,6 @@ Project.propTypes = {
     }),
   }),
 }
-
-
-
-
 
 export default Project
 
@@ -113,6 +141,22 @@ export const pageQuery = graphql`
         } 
         featuredproject
         description
+        sections{
+          text
+          sectionimage {
+            alt
+            description
+            rightjustify
+            leftjustify
+            image {
+              childImageSharp{
+                fluid(maxWidth: 2048, quality: 100) {
+                   ...GatsbyImageSharpFluid
+                }   
+              }
+            }
+          }
+        }
       }
       rawMarkdownBody
     }
