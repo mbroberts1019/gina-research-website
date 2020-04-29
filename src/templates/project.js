@@ -78,7 +78,7 @@ export const ProjectTemplate = ({
           
           {(funding || contributors) && <div className='project-sidebar column'>
               <div className="project-sidebar-title">Funded by:</div>
-              {funding.map((funder, index)=>{
+              {funding ? funding.map((funder, index)=>{
                 return (
                   <div key={index} className='project-funder'>
                     <div className="project-funder-image-container margin-top-0"
@@ -87,25 +87,26 @@ export const ProjectTemplate = ({
                             !!funder.funderimage.childImageSharp ? funder.funderimage.childImageSharp.fluid.src : funder.funderimage.image
                             })`,
                         }}></div>
-                    <h3>{funder.name}</h3>
+                    <div className="project-sidebar-name">{funder.name}</div>
                     
                   </div>
                 )
-              })} 
-              {contributors.map((contributor, index)=>{
+              }) : null} 
+              <div className="project-sidebar-title">Collaborators:</div>
+              {contributors ? contributors.map((contributor, index)=>{
                 return (
                   <div key={index} className='project-funder'>
-                    <div className="project-funder-image-container margin-top-0"
+                    <div className="project-contributor-image-container margin-top-0"
                         style ={{
                           backgroundImage: `url(${
                             !!contributor.avatar.childImageSharp ? contributor.avatar.childImageSharp.fluid.src : contributor.avatar.image
                             })`,
                         }}></div>
-                    <h3>{contributor.name}</h3>
+                    <div className="project-sidebar-name">{contributor.name}</div>
                     
                   </div>
                 )
-              })} 
+              }) : null} 
           </div> }
 
 
