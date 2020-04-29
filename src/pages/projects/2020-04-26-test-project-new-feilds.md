@@ -6,11 +6,7 @@ date: 2020-04-26T18:47:16.746Z
 description: >-
   Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus in
   hac habitasse platea dictumst. Amet commodo nulla facilisi nullam vehicula
-  ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin sagittis nisl
-  rhoncus mattis. Duis ultricies lacus sed turpis tincidunt. Egestas egestas
-  fringilla phasellus faucibus scelerisque eleifend donec. Consectetur libero id
-  faucibus nisl tincidunt eget nullam non. Mauris cursus mattis molestie a
-  iaculis at. Mauris rhoncus aenean vel elit
+  ipsum a. Sit amet nisl purus in mollis nunc sed id. 
 featuredproject: true
 sections:
   - sectionimage:
@@ -19,52 +15,53 @@ sections:
       image: /img/apple-icon.png
       rightjustify: true
     text: >-
-      Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
-      in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
-      vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
-      sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
-      Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit
+      **Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra
+      tellus in hac habitasse platea dictumst. Amet commodo nulla facilisi
+      nullam vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae
+      proin sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis
+      tincidunt. Egestas egestas fringilla phasellus faucibus scelerisque
+      eleifend donec. Consectetur libero id faucibus nisl tincidunt eget nullam
+      non. Mauris cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel
+      elit**
   - sectionimage:
       alt: field
       description: field
       image: /img/corn-soybean-rotation.jpg
       leftjustify: true
     text: >-
-      Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
+      *Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
       in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
       vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
       sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
       Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
       Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit
+      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit*
 
 
-      Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
+      *Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
       in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
       vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
       sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
       Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
       Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit
+      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit*
   - text: >-
-      Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
+      `Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
       in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
       vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
       sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
       Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
       Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit
+      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit`
 
 
-      Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
+      `Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
       in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
       vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
       sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
       Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
       Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit
+      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit`
 funding:
   - funderimage: /img/projtile-1.PNG
     name: Awesome Corp
