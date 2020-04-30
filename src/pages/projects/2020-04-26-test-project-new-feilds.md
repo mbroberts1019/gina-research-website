@@ -15,53 +15,34 @@ sections:
       image: /img/apple-icon.png
       rightjustify: true
     text: >-
-      **Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra
-      tellus in hac habitasse platea dictumst. Amet commodo nulla facilisi
-      nullam vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae
-      proin sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis
-      tincidunt. Egestas egestas fringilla phasellus faucibus scelerisque
-      eleifend donec. Consectetur libero id faucibus nisl tincidunt eget nullam
-      non. Mauris cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel
-      elit**
+      **Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.**
   - sectionimage:
       alt: field
       description: field
       image: /img/corn-soybean-rotation.jpg
       leftjustify: true
     text: >-
-      *Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
-      in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
-      vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
-      sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
-      Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit*
-
-
-      *Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
-      in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
-      vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
-      sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
-      Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit*
+      *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.*
   - text: >-
-      `Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
-      in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
-      vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
-      sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
-      Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit`
-
-
-      `Pharetra diam sit amet nisl suscipit adipiscing. Lacus sed viverra tellus
-      in hac habitasse platea dictumst. Amet commodo nulla facilisi nullam
-      vehicula ipsum a. Sit amet nisl purus in mollis nunc sed id. Vitae proin
-      sagittis nisl rhoncus mattis. Duis ultricies lacus sed turpis tincidunt.
-      Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Consectetur libero id faucibus nisl tincidunt eget nullam non. Mauris
-      cursus mattis molestie a iaculis at. Mauris rhoncus aenean vel elit`
+      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum`.
 funding:
   - funderimage: /img/projtile-1.PNG
     name: Awesome Corp

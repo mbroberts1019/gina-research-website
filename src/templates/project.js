@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ReactMarkdown from 'react-markdown'
 
 export const ProjectTemplate = ({
   content,
@@ -20,11 +21,9 @@ export const ProjectTemplate = ({
   contributors
 }) => {
   const ProjectContent = contentComponent || Content
-  const SectionContent = contentComponent || Content
-
-
-  console.log(contributors)
-
+  console.log(ProjectContent)
+  
+  
   return (
     <section className="section">
       {helmet || ''}
@@ -51,12 +50,12 @@ export const ProjectTemplate = ({
               <ProjectContent content={content} />
 
               {sections ? sections.map((section, index) => {
-                console.log(section.sectionimage) //remove
+                console.log(section.sectionimage)//remove
                 if (section.sectionimage) {
                   return (
 
                     <div key={index}>
-                      <SectionContent content={section.text} />
+                      <ReactMarkdown source={section.text} />
 
                       <div className="project-banner-image-container margin-top-0"
                         style={{
@@ -69,7 +68,7 @@ export const ProjectTemplate = ({
                 } else {
                   return (
                     <div key={index}>
-                      <SectionContent content={section.text} />
+                      <ReactMarkdown source={section.text} />
                     </div>
                   )
                 }
