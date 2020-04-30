@@ -30,7 +30,7 @@ collections:
         required: false
         widget: "list"
         fields: 
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Text", name: "text", widget: "markdown"}
           - label: "Section Image"
             name: "sectionimage"
             required: false
