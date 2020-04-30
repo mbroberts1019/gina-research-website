@@ -20,10 +20,9 @@ export const ProjectTemplate = ({
   contributors
 }) => {
   const ProjectContent = contentComponent || Content
+  console.log(ProjectContent)
   const SectionContent = contentComponent || Content
-
-
-  console.log(contributors)
+  console.log(SectionContent)
 
   return (
     <section className="section">
@@ -51,7 +50,7 @@ export const ProjectTemplate = ({
               <ProjectContent content={content} />
 
               {sections ? sections.map((section, index) => {
-                console.log(section.sectionimage) //remove
+                console.log(section.sectionimage)//remove
                 if (section.sectionimage) {
                   return (
 
