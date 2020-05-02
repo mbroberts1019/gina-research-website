@@ -59,22 +59,24 @@ export const ProjectTemplate = ({
                         <ReactMarkdown source={section.text} />
                       </div>
                       <div className="project-section-image-container margin-top-0 column is-4"> 
+                         <div className="project-section-image">
                           <Img 
                           fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
                           />
+                          </div>
                           <p>{section.sectionimage.description}</p>
                       </div>
                     </div>
                   )
                 } else if (section.sectionimage && section.sectionimage.leftjustify) {
-                  console.log("HERE: " + section.sectionimage.image.childImageSharp.fluid.sizes)
                   return (
-                    
                     <div key={index} className="project-section columns is-vcentered">
                       <div className="project-section-image-container margin-top-0 column is-4"> 
+                         <div className="project-section-image">
                           <Img 
                           fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
                           />
+                          </div>
                           <p>{section.sectionimage.description}</p>
                       </div>
                       <div className="column">
