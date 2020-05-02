@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ReactMarkdown from 'react-markdown'
+import Img from 'gatsby-image'
 
 export const ProjectTemplate = ({
   content,
@@ -22,8 +23,8 @@ export const ProjectTemplate = ({
 }) => {
   const ProjectContent = contentComponent || Content
   console.log(ProjectContent)
-  
-  
+
+
   return (
     <section className="section">
       {helmet || ''}
@@ -50,24 +51,54 @@ export const ProjectTemplate = ({
               <ProjectContent content={content} />
 
               {sections ? sections.map((section, index) => {
-                console.log(section.sectionimage)//remove
-                if (section.sectionimage) {
+                
+                if (section.sectionimage && section.sectionimage.rightjustify) {
                   return (
-
-                    <div key={index}>
-                      <ReactMarkdown source={section.text} />
-
-                      <div className="project-banner-image-container margin-top-0"
-                        style={{
-                          backgroundImage: `url(${
-                            !!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid.src : section.sectionimage.image
-                            })`,
-                        }}></div>
+                    <div key={index} className="project-section columns is-vcentered">
+                      <div className="column">
+                        <ReactMarkdown source={section.text} />
+                      </div>
+                      <div className="project-section-image-container margin-top-0 column is-4"> 
+                         <div className="project-section-image">
+                          <Img 
+                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
+                          />
+                          </div>
+                          <p>{section.sectionimage.description}</p>
+                      </div>
                     </div>
                   )
-                } else {
+                } else if (section.sectionimage && section.sectionimage.leftjustify) {
                   return (
-                    <div key={index}>
+                    <div key={index} className="project-section columns is-vcentered">
+                      <div className="project-section-image-container margin-top-0 column is-4"> 
+                         <div className="project-section-image">
+                          <Img 
+                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
+                          />
+                          </div>
+                          <p>{section.sectionimage.description}</p>
+                      </div>
+                      <div className="column">
+                        <ReactMarkdown source={section.text} />
+                      </div>
+                    </div>)
+                } else if(section.sectionimage){
+                  return (
+                    <div key={index} className="project-section column is-12 is-vcentered">
+                      <div className="project-section-image-container margin-top-0 column is-4"> 
+                          <Img 
+                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
+                          />
+                          <p>{section.sectionimage.description}</p>
+                      </div>
+                      <div className="column is-12 is-vcentered">
+                        <ReactMarkdown source={section.text} />
+                      </div>
+                    </div>)
+                }else {
+                  return (
+                    <div key={index} className="project-section columns is-vcentered">
                       <ReactMarkdown source={section.text} />
                     </div>
                   )
@@ -196,7 +227,7 @@ export const pageQuery = graphql`
               childImageSharp{
                 fluid(maxWidth: 2048, quality: 100) {
                    ...GatsbyImageSharpFluid
-                }   
+                }  
               }
             }
           }
