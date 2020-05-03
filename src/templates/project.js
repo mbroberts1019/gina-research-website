@@ -1,18 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ProjectSection from '../components/ProjectSection'
-import ReactMarkdown from 'react-markdown'
-import Img from 'gatsby-image'
+
 
 export const ProjectTemplate = ({
-  content,
-  contentComponent,
   description,
   title,
   helmet,
@@ -22,10 +17,7 @@ export const ProjectTemplate = ({
   funding,
   contributors
 }) => {
-  // const ProjectContent = contentComponent || Content
-  // console.log(ProjectContent)
-
-
+  
   return (
     <section className="section">
       {helmet || ''}
@@ -33,12 +25,8 @@ export const ProjectTemplate = ({
         <div className="columns">
           <div className="column project-main">
             <div className="project-banner">
-              <div className="project-banner-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    !!featuredimage.childImageSharp ? featuredimage.childImageSharp.fluid.src : featuredimage
-                    })`,
-                }}>
+              <div className="project-banner-image-container margin-top-0">
+                <PreviewCompatibleImage imageInfo={featuredimage}/>
               </div>
               <div className='project-banner-text'>
                 <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -48,7 +36,6 @@ export const ProjectTemplate = ({
               </div>
             </div>
             <div className='project-main'>
-              {/* <ProjectContent content={content} /> */}
               {sections ? sections.map((section, index) => {
                   return (
                     <ProjectSection sectionInfo={section} index={index}/>
@@ -89,9 +76,6 @@ export const ProjectTemplate = ({
               )
             }) : null}
           </div>}
-
-
-
         </div>
       </div>
     </section>
@@ -99,8 +83,6 @@ export const ProjectTemplate = ({
 }
 
 ProjectTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -116,8 +98,6 @@ const Project = ({ data }) => {
   return (
     <Layout>
       <ProjectTemplate
-        content={project.html}
-        contentComponent={HTMLContent}
         description={project.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Project">

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import Img from 'gatsby-image'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const ProjectSection = ({sectionInfo, index}) => {
 
@@ -13,9 +14,7 @@ const ProjectSection = ({sectionInfo, index}) => {
           </div>
           <div className="project-section-image-container margin-top-0 column is-4"> 
              <div className="project-section-image">
-              <Img 
-              fluid={!!sectionInfo.sectionimage.image.childImageSharp ? sectionInfo.sectionimage.image.childImageSharp.fluid : sectionInfo.sectionimage.image}
-              />
+              <PreviewCompatibleImage imageInfo={sectionInfo.sectionimage}/>
               </div>
               <p>{sectionInfo.sectionimage.description}</p>
           </div>
@@ -26,9 +25,7 @@ const ProjectSection = ({sectionInfo, index}) => {
         <div key={index} className="project-section columns is-vcentered">
           <div className="project-section-image-container margin-top-0 column is-4"> 
              <div className="project-section-image">
-              <Img 
-              fluid={!!sectionInfo.sectionimage.image.childImageSharp ? sectionInfo.sectionimage.image.childImageSharp.fluid : sectionInfo.sectionimage.image}
-              />
+             <PreviewCompatibleImage imageInfo={sectionInfo.sectionimage}/>
               </div>
               <p>{sectionInfo.sectionimage.description}</p>
           </div>
@@ -40,10 +37,8 @@ const ProjectSection = ({sectionInfo, index}) => {
       return (
         <div key={index} className="project-section column is-12 is-vcentered">
           <div className="project-section-image-container margin-top-0 column is-4"> 
-              <Img 
-              fluid={!!sectionInfo.sectionimage.image.childImageSharp ? sectionInfo.sectionimage.image.childImageSharp.fluid : sectionInfo.sectionimage.image}
-              />
-              <p>{sectionInfo.sectionimage.description}</p>
+            <PreviewCompatibleImage imageInfo={sectionInfo.sectionimage}/>    
+             <p>{sectionInfo.sectionimage.description}</p>
           </div>
           <div className="column is-12 is-vcentered">
             <ReactMarkdown source={sectionInfo.text} />
