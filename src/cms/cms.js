@@ -3,7 +3,7 @@ import uploadcare from 'netlify-cms-media-library-uploadcare'
 
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
-import ProjectPreview from './preview-templates/Project'
+import ProjectPreview from './preview-templates/ProjectPreview'
 
 CMS.registerMediaLibrary(uploadcare)
 
