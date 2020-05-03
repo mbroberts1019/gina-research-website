@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ProjectSection from '../components/ProjectSection'
 import ReactMarkdown from 'react-markdown'
 import Img from 'gatsby-image'
 
@@ -21,8 +22,8 @@ export const ProjectTemplate = ({
   funding,
   contributors
 }) => {
-  const ProjectContent = contentComponent || Content
-  console.log(ProjectContent)
+  // const ProjectContent = contentComponent || Content
+  // console.log(ProjectContent)
 
 
   return (
@@ -43,66 +44,15 @@ export const ProjectTemplate = ({
                 <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                   {title}
                 </h1>
-                <h4>{description}</h4>
+                <h3>{description}</h3>
               </div>
             </div>
-
             <div className='project-main'>
-              <ProjectContent content={content} />
-
+              {/* <ProjectContent content={content} /> */}
               {sections ? sections.map((section, index) => {
-                
-                if (section.sectionimage && section.sectionimage.rightjustify) {
                   return (
-                    <div key={index} className="project-section columns is-vcentered">
-                      <div className="column">
-                        <ReactMarkdown source={section.text} />
-                      </div>
-                      <div className="project-section-image-container margin-top-0 column is-4"> 
-                         <div className="project-section-image">
-                          <Img 
-                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
-                          />
-                          </div>
-                          <p>{section.sectionimage.description}</p>
-                      </div>
-                    </div>
-                  )
-                } else if (section.sectionimage && section.sectionimage.leftjustify) {
-                  return (
-                    <div key={index} className="project-section columns is-vcentered">
-                      <div className="project-section-image-container margin-top-0 column is-4"> 
-                         <div className="project-section-image">
-                          <Img 
-                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
-                          />
-                          </div>
-                          <p>{section.sectionimage.description}</p>
-                      </div>
-                      <div className="column">
-                        <ReactMarkdown source={section.text} />
-                      </div>
-                    </div>)
-                } else if(section.sectionimage){
-                  return (
-                    <div key={index} className="project-section column is-12 is-vcentered">
-                      <div className="project-section-image-container margin-top-0 column is-4"> 
-                          <Img 
-                          fluid={!!section.sectionimage.image.childImageSharp ? section.sectionimage.image.childImageSharp.fluid : section.sectionimage.image}
-                          />
-                          <p>{section.sectionimage.description}</p>
-                      </div>
-                      <div className="column is-12 is-vcentered">
-                        <ReactMarkdown source={section.text} />
-                      </div>
-                    </div>)
-                }else {
-                  return (
-                    <div key={index} className="project-section columns is-vcentered">
-                      <ReactMarkdown source={section.text} />
-                    </div>
-                  )
-                }
+                    <ProjectSection sectionInfo={section} index={index}/>
+                  )      
               }) : null}
             </div>
           </div>
