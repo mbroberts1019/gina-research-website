@@ -50,6 +50,12 @@ export default class Index extends React.Component {
               }}></div>
           </div>
         </section>
+        <section >
+          <div className="warning-banner">
+           <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
+           <h5> Enjoy a Dad joke</h5>
+          </div>
+        </section>
         <section>
           <div className="dad-joke-container">
             {!this.state.joke.setup ? null : 
