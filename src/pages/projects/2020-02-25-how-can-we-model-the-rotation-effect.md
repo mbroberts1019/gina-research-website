@@ -25,4 +25,4 @@ contributors:
     name: Dr. Sotirios Archontoulis
     website: 'https://crops.extension.iastate.edu/facts/'
 ---
-Working with crop models can help us examine phenomena in a detailed way. We are trying to parse out the rotation effect into bio-physical effects that can be captured in a process-based model (APSIM).
+
