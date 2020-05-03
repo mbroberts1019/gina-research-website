@@ -44,18 +44,22 @@ export const ProjectTemplate = ({
             </div>
           </div>
 
-          {(funding || contributors) && <div className='project-sidebar column is-2'>
+          {(funding || contributors) && <div className='project-sidebar column is-1'>
             <div className="project-sidebar-title">Funded by:</div>
             {funding ? funding.map((funder, index) => {
               return (
                 <div key={index} className='project-funder'>
-                  <div className="project-funder-image-container margin-top-0"
-                    style={{
-                      backgroundImage: `url(${
-                        !!funder.funderimage.childImageSharp ? funder.funderimage.childImageSharp.fluid.src : funder.funderimage.image
-                        })`,
-                    }}></div>
-                  <div className="project-sidebar-name">{funder.name}</div>
+                  <div className="project-funder-image-container margin-top-0">
+                      <div className="project-funder-image">
+                      <PreviewCompatibleImage imageInfo={funder.funderimage}/>
+                      </div>
+                      <div className="project-sidebar-name">
+                        {funder.website ? 
+                        <a href={funder.website}>{funder.name}</a> :
+                        <p>{funder.name}</p>}
+                      </div>
+                  </div>
+                  
 
                 </div>
               )
@@ -64,13 +68,16 @@ export const ProjectTemplate = ({
             {contributors ? contributors.map((contributor, index) => {
               return (
                 <div key={index} className='project-funder'>
-                  <div className="project-contributor-image-container margin-top-0"
-                    style={{
-                      backgroundImage: `url(${
-                        !!contributor.avatar.childImageSharp ? contributor.avatar.childImageSharp.fluid.src : contributor.avatar.image
-                        })`,
-                    }}></div>
-                  <div className="project-sidebar-name">{contributor.name}</div>
+                  <div className="project-contributor-image-container margin-top-0">
+                      <div className="project-contributor-image">
+                      <PreviewCompatibleImage imageInfo={{image: contributor.avatar, style: {borderRadius: "50%"}}} style={{"border-radius": "50%"}}/>
+                      </div>
+                    </div>
+                  <div className="project-sidebar-name">
+                        {contributor.website ? 
+                        <a href={contributor.website}>{contributor.name}</a> :
+                        <p>{contributor.name}</p>}
+                      </div>
 
                 </div>
               )
