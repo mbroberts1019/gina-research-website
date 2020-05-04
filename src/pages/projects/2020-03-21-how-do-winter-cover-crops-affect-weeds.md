@@ -13,5 +13,8 @@ contributors:
   - avatar: /img/rafa.png
     name: Rafael Martinez-Feria
     website: 'https://rmartinezferia.com'
+  - avatar: /img/andrea.jpg
+    name: Andrea Basche
+    website: 'https://agronomy.unl.edu/basche-research'
 ---
 
