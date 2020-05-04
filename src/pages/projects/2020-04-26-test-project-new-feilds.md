@@ -101,12 +101,6 @@ contributors:
     website: www.example.com
   - avatar: /img/projtile-3.PNG
     name: Hal 3000
-additionalimages:
-  - additionalimage: /img/landscape.jpg
-    alt: Sun and Grass
-    description: Grass
-  - additionalimage: /img/wheat.jpg
-    alt: wheat
-    description: wheat
+additionalimages: []
 ---
 
