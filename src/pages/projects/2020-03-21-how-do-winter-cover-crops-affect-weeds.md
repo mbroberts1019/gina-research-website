@@ -49,6 +49,17 @@ sections:
 
 
       We found cover crops did indeed reduce the size of the weed seed bank. 
+  - text: >-
+      The results from these studies have been presented in various forms:
+
+      * [A farminar presented by Practical Farmers of Iowa member Sam Bennett
+      and myself](https://www.youtube.com/watch?v=OClTW9B231c)
+
+      * [A great article about using cover crops to fight 'super
+      weeds'](https://www.capitalpress.com/ag_sectors/research/researchers-growers-have-superweeds-in-their-sights/article_5a68f708-7635-11ea-be29-6fa72a7f6689.html)
+
+      * A freely available peer-reviewed publication in Agricultural &
+      Environmental Letters *(coming soon)*
 funding:
   - funderimage: /img/sare.png
     name: SARE
