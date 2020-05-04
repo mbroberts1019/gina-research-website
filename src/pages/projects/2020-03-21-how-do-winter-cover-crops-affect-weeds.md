@@ -19,5 +19,8 @@ contributors:
   - avatar: /img/sarah-carlson.jpg
     name: Sarah Carlson
     website: 'https://practicalfarmers.org/about/staff/sarah-carlson-2/'
+  - avatar: /img/matt.jpg
+    name: Matt Liebman
+    website: 'https://scholar.google.com/citations?user=tyIodIwAAAAJ&hl=en'
 ---
 
