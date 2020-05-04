@@ -18,6 +18,9 @@ funding:
   - funderimage: /img/SARE-logo.gif
     name: SARE
     website: 'https://www.sare.org'
+  - funderimage: /img/nsf.jpg
+    name: NSF
+    website: 'https://datafewsion.iastate.edu'
 contributors:
   - avatar: /img/rafa.png
     name: Rafael Martinez-Feria
