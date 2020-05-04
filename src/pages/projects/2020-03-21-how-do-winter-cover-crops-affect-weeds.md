@@ -14,6 +14,16 @@ sections:
       image: /img/rye-cc-boyd-bright.jpg
       rightjustify: true
     text: "The Midwestern region of the United States produces an insane amount of corn - around a third of the world's production comes from these 12 states. Much of that corn is produced using a rotation of corn and soybean, both of which are planted in the spring (April/May) and harvested in the fall (Oct/Nov), leaving the ground bare over the winter.  Using winter cover crops as part of this rotation protects the soil from erosion and soaks up extra nutrients in the spring before the main crop is planted (thus keeping those nutrients out of our water). However, these benefits are hard to monetize.  Many people wonder if cover crops can reduce weed control costs. \r\n\r\nTo answer that question my colleagues and I used two approaches.\r\n"
+  - sectionimage:
+      alt: >-
+        Simulations were run using SALUS, SSURGO data, and 30 years of
+        historical weather data. 
+      description: >-
+        Planting cover crops in mid-October means you have to wait well into May
+        or June to get serious amounts of rye biomass. 
+      image: /img/cover-crop-biomass-sims.png
+      leftjustify: true
+    text: "\r**Meta-analysis and Modelling Study**\r\n\r\nWe gathered up all of the weed studies done in the Midwest that looked at the effect cover cropping in a corn-soybean rotation. We put them into a database (which you can access [here](https://iastate.figshare.com/articles/Effect_of_cover_crops_on_weed_biomass_and_density_in_the_US_Midwest_Corn_Belt_meta-analysis_dataset/11933214)) and summarized them. We found on average, **cover crops reduce the size of weeds in a field, but do not reduce the number of weeds**. Smaller weeds are easier to kill, and they produce less seeds. \r\n\r\nThough cover crops reduced weed size, we found you need a lot of cover crop biomass (5 pop cans tall) to get a meaningful reduction. This made us wonder what the chances are of getting that much biomass in a typical corn/soybean rotation. We ran simulations using 30 years of weather data and averaged the results by county. We found if you plant a cover crop in October, you have to wait until June to get serious amounts of rye biomass for most of the Midwest. Even if you plant your cover crop early (September), chances aren't good. "
 funding:
   - funderimage: /img/SARE-logo.gif
     name: SARE
