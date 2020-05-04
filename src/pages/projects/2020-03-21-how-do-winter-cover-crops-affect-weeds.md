@@ -22,5 +22,7 @@ contributors:
   - avatar: /img/matt.jpg
     name: Matt Liebman
     website: 'https://scholar.google.com/citations?user=tyIodIwAAAAJ&hl=en'
+  - avatar: /img/Lydai.jpg
+    name: Lydia English
 ---
 
