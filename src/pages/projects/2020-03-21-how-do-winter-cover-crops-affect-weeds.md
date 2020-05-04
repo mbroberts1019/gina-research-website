@@ -28,7 +28,7 @@ funding:
   - funderimage: /img/SARE-logo.gif
     name: SARE
     website: 'https://www.sare.org'
-  - funderimage: /img/nsf.jpg
+  - funderimage: /img/1024px-NSF_logo.png
     name: NSF
     website: 'https://datafewsion.iastate.edu'
 contributors:
