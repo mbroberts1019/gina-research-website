@@ -16,7 +16,7 @@ contributors:
   - avatar: /img/andrea.jpg
     name: Andrea Basche
     website: 'https://agronomy.unl.edu/basche-research'
-  - avatar: ''
+  - avatar: /img/sarah-carlson.jpg
     name: Sarah Carlson
     website: 'https://practicalfarmers.org/about/staff/sarah-carlson-2/'
 ---
