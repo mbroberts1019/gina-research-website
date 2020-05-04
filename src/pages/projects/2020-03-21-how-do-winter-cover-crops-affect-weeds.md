@@ -25,7 +25,7 @@ sections:
       leftjustify: true
     text: "\r**Meta-analysis and Modelling Study**\r\n\r\nWe gathered up all of the weed studies done in the Midwest that looked at the effect cover cropping in a corn-soybean rotation. We put them into a database (which you can access [here](https://iastate.figshare.com/articles/Effect_of_cover_crops_on_weed_biomass_and_density_in_the_US_Midwest_Corn_Belt_meta-analysis_dataset/11933214)) and summarized them. We found on average, **cover crops reduce the size of weeds in a field, but do not reduce the number of weeds**. Smaller weeds are easier to kill, and they produce less seeds. \r\n\r\nThough cover crops reduced weed size, we found you need a lot of cover crop biomass (5 pop cans tall) to get a meaningful reduction. This made us wonder what the chances are of getting that much biomass in a typical corn/soybean rotation. We ran simulations using 30 years of weather data and averaged the results by county. We found if you plant a cover crop in October, you have to wait until June to get serious amounts of rye biomass for most of the Midwest. Even if you plant your cover crop early (September), chances aren't good. "
 funding:
-  - funderimage: /img/SARE-logo.gif
+  - funderimage: ''
     name: SARE
     website: 'https://www.sare.org'
   - funderimage: /img/1024px-NSF_logo.png
