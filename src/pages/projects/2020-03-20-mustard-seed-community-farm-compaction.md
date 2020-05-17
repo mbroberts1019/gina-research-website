@@ -8,7 +8,7 @@ description: >-
   vegetables, and I do science! I recently went and took penetrometer
   measurements (with some helpers).  I'm processing the data, but expect a Shiny
   App soon....
-featuredproject: true
+featuredproject: false
 sections:
   - text: >-
       Soil compaction is a real concern for a lot of farmers. The [Archontoulis
