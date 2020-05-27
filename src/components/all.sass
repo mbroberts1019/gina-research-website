@@ -33,10 +33,19 @@ $section-padding: 1rem 1.5rem
 .navbar .navbar-menu
   box-shadow:none !important
 
-.footer
-  background-color: $light-grey
-  margin: 0 auto 0
-  max-height: 25px
+footer
+  background-color: $dark-grey
+  margin: auto
+  //max-height: 25px
+  min-height: 10vh
+
+.copywrite
+  width: 100%
+  margin: 5rem auto 0
+  padding: 1rem 0rem .25rem
+  color: white
+  font-family: monospace
+  font-weight: bold
 
 .content .taglist
   list-style: none
@@ -77,8 +86,8 @@ $section-padding: 1rem 1.5rem
   font-weight: 700
 
 .home-banner-tile
-  height: 50vh
-  width: 50vh
+  height: 30vh
+  width: 30vh
   background-size: contain
   background-position: center
   background-repeat: no-repeat
@@ -86,6 +95,16 @@ $section-padding: 1rem 1.5rem
   padding: 0
   margin: 1rem .5rem 0 
   border-radius: 20px
+
+.home-banner-tile-avatar
+  margin: auto
+  height: 100%
+  width: 75%
+  border-radius: 50% !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  //padding: 1vh 5vh  
 
 .home-banner-tile-1
   background-color: $orange
@@ -96,7 +115,7 @@ $section-padding: 1rem 1.5rem
 .home-banner-tile-3
   background-color: $blue
 
-.three-tile-container
+.four-tile-container
   display: flex
   flex-direction: row
   align-items: center
@@ -324,18 +343,6 @@ $section-padding: 1rem 1.5rem
   font-weight: 500
   font-family: Glacial Indeifference
 
-footer.footer
-  background-color: $light-grey
-  height: 50px
-  
-
-  
-
-.copywrite
-  width: 100%
-  padding: .25rem 0rem .25rem
-  color: #7503f7
-  font-family: monospace
 
 //Menu overrides
 $menu-item-color: $white-ter

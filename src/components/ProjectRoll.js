@@ -12,7 +12,8 @@ class ProjectRoll extends React.Component {
       <div className="columns is-multiline">
         {projects &&
           projects.map(({ node: project }) => (
-            <div className="is-parent column is-6" key={project.id}>
+            project.frontmatter.featuredproject ?
+           <div className="is-parent column is-6" key={project.id}>
               <article
                 className={`blog-list-item tile is-child box  ${
                   project.frontmatter.featuredproject ? 'is-featured' : ''
@@ -49,7 +50,7 @@ class ProjectRoll extends React.Component {
                   </Link>
                 </p>
               </article>
-            </div>
+            </div> : null
           ))}
       </div>
     )
