@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
@@ -13,22 +14,24 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { 
-      isValidated: false, 
+    this.state = {
+      isValidated: false,
       joke: {
         "setup": 'null',
-        "punchline": 'null' 
+        "punchline": 'null'
       }
     }
   }
 
 
-  componentWillMount(){
+
+
+  componentWillMount() {
     let joke = getJokes()
     this.setState(
       this.state.joke = joke
     )
-    
+
   }
 
   render() {
@@ -36,20 +39,20 @@ export default class Index extends React.Component {
       <Layout>
         <section>
           <div className='four-tile-container'>
-              <div className='home-banner-tile '>
-                <div className= 'home-banner-tile-avatar' style={{
+            <div className='home-banner-tile '>
+              <div className='home-banner-tile-avatar' style={{
                 backgroundImage: `url('/img/Picture-day2019.jpg')`,
               }}></div>
-              </div>
-              <div className='home-banner-tile home-banner-tile-1'
+            </div>
+            <div className='home-banner-tile home-banner-tile-1'
               style={{
                 backgroundImage: `url('/img/hometile-1.PNG')`,
               }}></div>
-              <div className='home-banner-tile home-banner-tile-2'
+            <div className='home-banner-tile home-banner-tile-2'
               style={{
                 backgroundImage: `url('/img/hometile-2.PNG')`,
               }}></div>
-              <div className='home-banner-tile home-banner-tile-3'
+            <div className='home-banner-tile home-banner-tile-3'
               style={{
                 backgroundImage: `url('/img/hometile-3.PNG')`,
               }}></div>
@@ -57,24 +60,56 @@ export default class Index extends React.Component {
         </section>
         <section >
           <div className="warning-banner">
-           <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
-           <h5> Enjoy a Dad joke</h5>
+            <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
+            <h5> Enjoy a Dad joke</h5>
           </div>
         </section>
         <section>
           <div className="dad-joke-container">
-            {!this.state.joke.setup ? null : 
-            <div className="dad-joke-question">
-              {this.state.joke.setup}
-            </div>}
-            {!this.state.joke.punchline | !this.state.joke.setup ? null : 
-            <div className="dad-joke-answer">
-              {this.state.joke.punchline}
-            </div>}
+            {!this.state.joke.setup ? null :
+              <div className="dad-joke-question">
+                {this.state.joke.setup}
+              </div>}
+            {!this.state.joke.punchline | !this.state.joke.setup ? null :
+              <div className="dad-joke-answer">
+                {this.state.joke.punchline}
+              </div>}
           </div>
 
+        </section>
+        <section>
+          <StaticQuery
+            query={graphql`
+            query HomePageData {
+              markdownRemark(fileAbsolutePath: {regex: "/home-content/"}) {
+                frontmatter {
+                  title
+                  education {
+                    dates
+                    institute
+                  }
+                  outreach {
+                    dates
+                    program
+                  }
+                }
+              }
+            }
+            `}
+            render={data => {
+
+              return data.markdownRemark.frontmatter.education.map((value) => {
+               return <h5>{value.institute}   {value.dates}</h5>}
+              )
+            }}
+          />
         </section>
       </Layout>
     )
   }
 }
+
+
+
+
+

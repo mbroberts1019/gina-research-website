@@ -32,7 +32,11 @@ exports.createPages = ({ actions, graphql }) => {
     const pages = result.data.allMarkdownRemark.edges
 
     pages.forEach(edge => {
-      const id = edge.node.id
+      //const id = edge.node.id
+      /* 
+       added ternary to isolate home-page content so that it does not try to create a page for it.... probably a smarter way to do this   
+       */ 
+      (edge.node.frontmatter.title !== "Hompage") ?
       createPage({
         path: edge.node.fields.slug,
         //tags: edge.node.frontmatter.tags,
@@ -43,7 +47,8 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           id,
         },
-      })
+      }) : null
+
     })
   })
 }
