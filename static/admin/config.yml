@@ -74,4 +74,30 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "home-content"
+    label: "Home Page Info"
+    editor: {preview: false}
+    files:    
+      - file: "src/home-content/index.yml"
+        label: "Home"
+        name: "home-content"
+        format: "yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Education"
+            name: "education"
+            required: false
+            widget: "list"
+            fields:
+              - {label: "Institute", name: "institute", widget: "string"}
+              - {label: "Dates", name: "dates", widget: "string", required: false }
+          - label: "Outreach"
+            name: "outreach"
+            required: false
+            widget: "list"
+            fields:
+              - {label: "Program", name: "program", widget: "string"}
+              - {label: "Dates", name: "dates", widget: "string", required: false }
+              
+          
       
