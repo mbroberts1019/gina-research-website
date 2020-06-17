@@ -78,10 +78,10 @@ collections:
     label: "Home Page Info"
     editor: {preview: false}
     files:    
-      - file: "src/home-content/index.yml"
+      - file: "src/home-content/index.md"
         label: "Home"
         name: "home-content"
-        format: "yml"
+        format: "md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "Education"
