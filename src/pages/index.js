@@ -3,6 +3,9 @@ import { graphql, StaticQuery } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
+import OutreachList from '../components/OutreachList'
+import EducationList  from '../components/EducationList'
+
 
 function encode(data) {
   return Object.keys(data)
@@ -78,31 +81,8 @@ export default class Index extends React.Component {
 
         </section>
         <section>
-          <StaticQuery
-            query={graphql`
-            query HomePageData {
-              markdownRemark(fileAbsolutePath: {regex: "/home-content/"}) {
-                frontmatter {
-                  title
-                  education {
-                    dates
-                    institute
-                  }
-                  outreach {
-                    dates
-                    program
-                  }
-                }
-              }
-            }
-            `}
-            render={data => {
-
-              return data.markdownRemark.frontmatter.education.map((value) => {
-               return <h5>{value.institute}   {value.dates}</h5>}
-              )
-            }}
-          />
+          <OutreachList/>
+          <EducationList/>
         </section>
       </Layout>
     )
