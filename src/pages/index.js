@@ -46,6 +46,7 @@ export default class Index extends React.Component {
               <div className='home-banner-tile-avatar' style={{
                 backgroundImage: `url('/img/Picture-day2019.jpg')`,
               }}></div>
+              <p className="home-avatar-name">Virginia Nichols M.S.</p>
             </div>
             <div className='home-banner-tile home-banner-tile-1'
               style={{
