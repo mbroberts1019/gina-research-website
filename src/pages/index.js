@@ -61,6 +61,21 @@ export default class Index extends React.Component {
               }}></div>
           </div>
         </section>
+        <hr className= "homepage-hr"></hr>
+        
+        <section>
+          <div className= "home-cv-container">
+            <div className= "home-cv-column">
+              <h2 className= "home-cv-title">Outreach</h2>
+              <OutreachList/>
+            </div>
+            <div className= "home-cv-column">
+              <h2 className= "home-cv-title">Education</h2>
+              <EducationList/>
+            </div>
+          </div>
+        </section>
+        <hr className= "homepage-hr"></hr>
         <section >
           <div className="warning-banner">
             <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
@@ -79,10 +94,6 @@ export default class Index extends React.Component {
               </div>}
           </div>
 
-        </section>
-        <section>
-          <OutreachList/>
-          <EducationList/>
         </section>
       </Layout>
     )

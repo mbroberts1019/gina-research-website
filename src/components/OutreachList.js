@@ -20,7 +20,13 @@ const OutreachList = () => {
   return (
       
     <ul>
-       {markdownRemark.frontmatter.outreach.map((data, i) => {return <li key= {i} >{data.program} {data.dates}</li>})}
+       {markdownRemark.frontmatter.outreach.map((data, i) => {
+           return <li key= {i} className="home-cv-item " >
+                    <span><span className="home-cv-item-logo">🍆</span>{data.program}</span>
+                     <span>{data.dates}</span>
+                </li>
+           
+           })}
     </ul>
   )}
 

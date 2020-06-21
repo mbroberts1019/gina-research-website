@@ -20,7 +20,12 @@ const Educationlist = () => {
   return (
       
     <ul>
-       {markdownRemark.frontmatter.education.map((data, i) => {return <li key={i}>{data.institute} {data.dates}</li>})}
+       {markdownRemark.frontmatter.education.map((data, i) => {
+           return <li key={i} className="home-cv-item">
+                   
+                    <span><span className="home-cv-item-logo"> 🎓 </span>{data.institute}</span> 
+                    <span>{data.dates}</span>
+                </li>})}
     </ul>
   )}
 
