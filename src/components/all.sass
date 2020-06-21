@@ -13,6 +13,7 @@ $orange: #ff7443
 $yellow: #fed65c
 $yellow-fade: #fbd65c9f
 $green: #5C903F
+$purple: #36033d
 $primary-color: #10375c
 $title-color: $orange
 $link-item-color: #f5f1f1
@@ -99,14 +100,21 @@ footer
 
 .home-banner-tile-avatar
   margin: auto
-  height: 100%
-  width: 75%
+  height: 80%
+  width: 60%
   border-radius: 50% !important
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  box-shadow: 1px 1px 5px 5px #36033d
+  box-shadow: 1px 1px 5px 5px $purple
   //padding: 1vh 5vh  
+.home-avatar-name
+  font-family: "Comic Sans MS"
+  font-weight: 700
+  font-size: 1rem
+  color: $black
+  text-align: center
+  margin-top: .5rem
 
 .home-banner-tile-1
   background-color: $orange
@@ -130,7 +138,7 @@ footer
   
 .homepage-hr
   width: 75%
-  margin: 3rem auto 3rem 
+  margin: 4rem auto 3rem 
 
 // Homepage CV lists
 .home-cv-container
@@ -158,7 +166,7 @@ footer
   font-size: 1.4rem
   font-family: Glacial-Indifference
   align-items: center
-
+  text-align: center
 .home-cv-item-logo
   margin-right: 1rem
   font-size: 1.5rem
