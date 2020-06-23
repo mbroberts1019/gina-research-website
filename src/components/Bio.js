@@ -1,21 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-const OutreachList = () => {
-  const { markdownRemark } = useStaticQuery(
-    graphql`
-      query {
-        markdownRemark(fileAbsolutePath: {regex: "/home-content/"}) {
-          frontmatter {
-            title
-            outreach {
-              dates
-              program
-            }
-          }
-        }
-      }
-    `
-  )
+const Bio = () => {
+//   const { markdownRemark } = useStaticQuery(
+//     graphql`
+//       query {
+//         markdownRemark(fileAbsolutePath: {regex: "/home-content/"}) {
+//           frontmatter {
+//             title
+//             bio
+//           }
+//         }
+//       }
+//     `
+//   )
 
   return (
       
@@ -30,4 +27,4 @@ const OutreachList = () => {
     </ul>
   )}
 
-export default OutreachList
+export default Bio

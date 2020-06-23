@@ -84,6 +84,7 @@ collections:
         format: "md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Bio", name: "bio", widget: "markdown"}
           - label: "Education"
             name: "education"
             required: false
