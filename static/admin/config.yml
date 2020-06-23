@@ -92,13 +92,3 @@ collections:
             fields:
               - {label: "Institute", name: "institute", widget: "string"}
               - {label: "Dates", name: "dates", widget: "string", required: false }
-          - label: "Outreach"
-            name: "outreach"
-            required: false
-            widget: "list"
-            fields:
-              - {label: "Program", name: "program", widget: "string"}
-              - {label: "Dates", name: "dates", widget: "string", required: false }
-              
-          
-      
