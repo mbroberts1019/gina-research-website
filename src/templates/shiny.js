@@ -36,7 +36,7 @@ const Shiny = ({ data }) => {
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <ShinyTemplate
         
         title={post.frontmatter.title}
         

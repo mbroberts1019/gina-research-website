@@ -88,9 +88,9 @@ export default () => (
                     }
                   }
                 } 
-                
+                url
                 description
-                
+                featuredshiny
               }    
             }
           }

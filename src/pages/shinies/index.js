@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import ProjectRoll from '../../components/ProjectRoll'
+import ShinyRoll from '../../components/ShinyRoll'
 
 export default class ShinyIndexPage extends React.Component {
   render() {
@@ -10,8 +10,7 @@ export default class ShinyIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              {/* <ProjectRoll /> */}
-              Things go here
+             <ShinyRoll/>
             </div>
           </div>
         </section>
