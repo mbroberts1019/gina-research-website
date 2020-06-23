@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 
-export const ShinyTemplate = ({ title, url }) => {
+export const ShinyTemplate = ({ title, description, url }) => {
   
 
   return (
@@ -16,8 +16,11 @@ export const ShinyTemplate = ({ title, url }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <div>
-                
+              <div className="shiny-description-container">
+                {description}
+              </div>
+              <div className="shiny-app-container">
+              <iframe src={url} width="100%" height="100%"></iframe>
               </div>
             </div>
           </div>
@@ -38,8 +41,8 @@ const Shiny = ({ data }) => {
   return (
     <Layout>
       <ShinyTemplate
-        
         title={shiny.frontmatter.title}
+        description={shiny.frontmatter.description}
         url={shiny.frontmatter.url}
       />
     </Layout>
@@ -58,17 +61,8 @@ export const shinyQuery = graphql`
         frontmatter {
           title
           templateKey
-          featuredimage {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          } 
           url
           description
-          featuredshiny
-
       }
     }
   }
