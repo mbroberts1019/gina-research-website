@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
-import OutreachList from '../components/OutreachList'
+
 import EducationList  from '../components/EducationList'
 
 
@@ -63,20 +63,6 @@ export default class Index extends React.Component {
           </div>
         </section>
         <hr className= "homepage-hr"></hr>
-        
-        <section>
-          <div className= "home-cv-container">
-            <div className= "home-cv-column">
-              <h2 className= "home-cv-title">Outreach</h2>
-              <OutreachList/>
-            </div>
-            <div className= "home-cv-column">
-              <h2 className= "home-cv-title">Education</h2>
-              <EducationList/>
-            </div>
-          </div>
-        </section>
-        <hr className= "homepage-hr"></hr>
         <section >
           <div className="warning-banner">
             <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
@@ -96,6 +82,20 @@ export default class Index extends React.Component {
           </div>
 
         </section>
+        <section>
+          <div className= "home-cv-container">
+            <div className= "home-cv-column">
+              <h2 className= "home-cv-title">Outreach</h2>
+              Place Holder for Bio
+            </div>
+            <div className= "home-cv-column">
+              <h2 className= "home-cv-title">Education</h2>
+              <EducationList/>
+            </div>
+          </div>
+        </section>
+        <hr className= "homepage-hr"></hr>
+        
       </Layout>
     )
   }
