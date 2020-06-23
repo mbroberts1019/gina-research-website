@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
-
+import Bio from '../components/Bio'
 import EducationList  from '../components/EducationList'
 
 
@@ -85,8 +85,7 @@ export default class Index extends React.Component {
         <section>
           <div className= "home-cv-container">
             <div className= "home-cv-column">
-              <h2 className= "home-cv-title">Outreach</h2>
-              Place Holder for Bio
+              <Bio/>
             </div>
             <div className= "home-cv-column">
               <h2 className= "home-cv-title">Education</h2>
