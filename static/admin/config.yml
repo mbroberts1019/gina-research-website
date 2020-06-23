@@ -92,3 +92,16 @@ collections:
             fields:
               - {label: "Institute", name: "institute", widget: "string"}
               - {label: "Dates", name: "dates", widget: "string", required: false }
+  - name: "shinies"
+    label: "Shinies"
+    folder: "src/pages/shinies"
+    editor: {preview: false}
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "shiny"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Featured Shiny", name: "featuredshiny", widget: "boolean", required: false}

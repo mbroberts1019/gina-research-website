@@ -88,7 +88,7 @@ export default class Index extends React.Component {
               <Bio/>
             </div>
             <div className= "home-cv-column">
-              <h2 className= "home-cv-title">Education</h2>
+              <h2 className= "home-cv-title">Background</h2>
               <EducationList/>
             </div>
           </div>
