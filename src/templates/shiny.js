@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 
-export const ShinyTemplate = ({ title, content, contentComponent }) => {
+export const ShinyTemplate = ({ title, url }) => {
   
 
   return (
@@ -16,7 +16,9 @@ export const ShinyTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              Shiny Goes here
+              <div>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -27,19 +29,18 @@ export const ShinyTemplate = ({ title, content, contentComponent }) => {
 
 ShinyTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  url: PropTypes.string
 }
 
 const Shiny = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: shiny } = data
 
   return (
     <Layout>
       <ShinyTemplate
         
-        title={post.frontmatter.title}
-        
+        title={shiny.frontmatter.title}
+        url={shiny.frontmatter.url}
       />
     </Layout>
   )
@@ -55,7 +56,19 @@ export const shinyQuery = graphql`
   query Shiny($id: String!) {
     markdownRemark(id: { eq: $id }) {
         frontmatter {
-        title
+          title
+          templateKey
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          } 
+          url
+          description
+          featuredshiny
+
       }
     }
   }
