@@ -23,7 +23,7 @@ export const ProjectTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column project-main">
+          <div className="column project-main is-11">
             <div className="project-banner">
               <div className="project-banner-image-container margin-top-0">
                 <PreviewCompatibleImage imageInfo={featuredimage}/>
@@ -68,11 +68,11 @@ export const ProjectTemplate = ({
             {contributors ? contributors.map((contributor, index) => {
               return (
                 <div key={index} className='project-funder'>
-                  <div className="project-contributor-image-container margin-top-0">
+                  {/* <div className="project-contributor-image-container margin-top-0"> */}
                       <div className="project-contributor-image">
                       <PreviewCompatibleImage imageInfo={{image: contributor.avatar, style: {borderRadius: "50%"}}} style={{"border-radius": "50%"}}/>
                       </div>
-                    </div>
+                    {/* </div> */}
                   <div className="project-sidebar-name">
                         {contributor.website ? 
                         <a href={contributor.website}>{contributor.name}</a> :
