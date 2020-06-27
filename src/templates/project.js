@@ -19,7 +19,7 @@ export const ProjectTemplate = ({
 }) => {
   
   return (
-    <section className="section">
+    <section className="section project-page-div">
       {helmet || ''}
       <div className="container content">
         <div className="columns">

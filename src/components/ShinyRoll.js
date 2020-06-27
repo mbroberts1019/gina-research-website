@@ -9,7 +9,7 @@ class ShinyRoll extends React.Component {
     const { edges: shinies } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline shiny-roll-item-container">
         {shinies &&
           shinies.map(({ node: shiny }) => (
             shiny.frontmatter.featuredshiny ?

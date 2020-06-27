@@ -32,7 +32,7 @@ class ProjectRoll extends React.Component {
                   ) : null}
                   <p className="project-meta row is-1">
                     <Link
-                      className="title .project-title"
+                      className="title project-title"
                       to={project.fields.slug}
                     >
                       {project.frontmatter.title}
@@ -41,7 +41,7 @@ class ProjectRoll extends React.Component {
                   </p>
                 </header>
 
-                <p>
+                <p className="project-subtitle">
                   <span className="subtitle is-size-5 is-block">
                     {project.frontmatter.description}
                   </span>
