@@ -1,6 +1,30 @@
 {
     "jokes": [
         {
+            "setup": "When your kids are learning to drive...",
+            "punchline": "...don't stand in their way."
+        },
+		{
+            "setup": "Puns about poop aren't my favorite.",
+            "punchline": "But they're a solid number 2."
+        },
+		{
+            "setup": "Isn't the Grand Canyon...",
+            "punchline": "really just gorges?"
+        },
+		{
+            "setup": "Never play tennis with a cymbal.",
+            "punchline": "It amkes a terrible racket."
+        },
+		{
+            "setup": "Autopsy club party this Saturday.",
+            "punchline": "It's open Mike night."
+        },
+		{
+            "setup": "What do you call it when a chicken is looking at a bowl of lettuce?",
+            "punchline": "Chicken sees a salad."
+        },
+		{
             "setup": "To the thief who stole my glasses:",
             "punchline": "I will find you. I have contacts."
         },
