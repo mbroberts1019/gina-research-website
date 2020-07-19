@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: '5px' }
-  const { childImageSharp, image } = imageInfo
+  let imageStyle = { borderRadius: '5px' }
+  const { childImageSharp, image, style } = imageInfo
+
+  if(style){imageStyle = style}
 
   if (!!image && !!image.childImageSharp) {
     return (

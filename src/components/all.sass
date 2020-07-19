@@ -13,6 +13,7 @@ $orange: #ff7443
 $yellow: #fed65c
 $yellow-fade: #fbd65c9f
 $green: #5C903F
+$purple: #36033d
 $primary-color: #10375c
 $title-color: $orange
 $link-item-color: #f5f1f1
@@ -22,15 +23,35 @@ $navbar-item-color: $link-item-color
 $navbar-item-hover-color: $link-item-hover-color
 $section-padding: 1rem 1.5rem
 
+.warning-banner
+  color: $orange
+  font-family: Glacial Indifference
+  text-align: center
+  font-size: 2rem
+  h5 
+    font-size: 1.75rem
+
 .navbar .navbar-menu
   box-shadow:none !important
+  font-family: Glacial Indifference
+  font-size: 1.1rem
 
-.footer
-  background-color: $light-grey
-  margin: 0 auto 0
-  max-height: 25px
+footer
+  background-color: $dark-grey
+  margin: auto
+  //max-height: 25px
+  min-height: 10vh
+
+.copywrite
+  width: 100%
+  margin: 5rem auto 0
+  padding: 1rem 0rem .25rem
+  color: white
+  font-family: monospace
+  font-weight: bold
 
 .content .taglist
+  //font-family: Glacial Indifference !important
   list-style: none
   margin-bottom: 0
   margin-left: 0
@@ -69,8 +90,8 @@ $section-padding: 1rem 1.5rem
   font-weight: 700
 
 .home-banner-tile
-  height: 50vh
-  width: 50vh
+  height: 30vh
+  width: 30vh
   background-size: contain
   background-position: center
   background-repeat: no-repeat
@@ -78,17 +99,39 @@ $section-padding: 1rem 1.5rem
   padding: 0
   margin: 1rem .5rem 0 
   border-radius: 20px
+  
+
+.home-banner-tile-avatar
+  margin: auto
+  height: 80%
+  width: 60%
+  border-radius: 50% !important
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  box-shadow: 1px 1px 5px 5px $purple
+  //padding: 1vh 5vh  
+.home-avatar-name
+  font-family: "Glacial Indifference"
+  font-weight: 700
+  font-size: 1.3rem
+  color: $black
+  text-align: center
+  margin-top: .5rem
 
 .home-banner-tile-1
   background-color: $orange
+  box-shadow: 2px 2px 3px 3px #888888
 
 .home-banner-tile-2
   background-color: $yellow
+  box-shadow: 2px 2px 3px 3px #888888
 
 .home-banner-tile-3
   background-color: $blue
+  box-shadow: 2px 2px 3px 3px #888888
 
-.three-tile-container
+.four-tile-container
   display: flex
   flex-direction: row
   align-items: center
@@ -96,8 +139,49 @@ $section-padding: 1rem 1.5rem
   flex-wrap: wrap
   justify-content: center
   
+.homepage-hr
+  width: 75%
+  margin: 4rem auto 3rem 
+
+// Homepage CV lists
+.home-cv-container
+  display: flex
+  flex-direction: row
+
+.home-cv-column  
+  width: 50%
+  //border: .5px solid $light-grey
+  border-radius: 5px
+  margin: 2rem 1rem 2rem
+  box-shadow: 2px 2px 2px 3px #888888
+
+.home-cv-title
+  color: $black
+  font-family: Montserrat Light
+  font-weight: 900
+  font-size: 2rem
+  text-align: center
+
+.home-cv-item    
+  padding: 1rem 3rem 1rem
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  font-size: 1.4rem
+  font-family: Glacial Indifference
+  align-items: center
+  text-align: center
+.home-cv-item-logo
+  margin-right: 1rem
+  font-size: 1.5rem
+  
+.home-bio-container
+  font-size: 1.25rem
+  padding: .5rem 1rem .5rem
+  font-family: Glacial Indifference
 
 
+  
 // Helper Classes
 .full-width-image-container
   width: 100vw
@@ -197,20 +281,134 @@ $section-padding: 1rem 1.5rem
   
 
 .project-banner-image-container
-  width: 40vw
-  height: 30vh
+  max-width: 20vw
+  max-height: 30vh
   min-width: 200px
   minheight: 200px
   margin: 0 auto 1rem
-  background-size: contain
-  background-position: center
-  display: flex
-  justify-content: center
-  align-items: center 
-  flex-basis: 2
+  // background-size: contain
+  // background-position: center
+  // display: flex
+  // justify-content: center
+  // align-items: center 
+  // flex-basis: 2
   background-repeat: no-repeat
 
+.project-funder-image-container
+  max-width: 100%
+  max-height: 100%
+  min-width: 20px
+  min-height: 20px
+  margin: 1rem auto 0rem
+  text-align: center
+  color: $light-grey 
+  
+.project-funder-image
+  max-width: 8vw
+  max-height: 8vw
+  margin: 1rem auto 1rem
 
+.project-contributor-image-container
+  max-width: 100%
+  max-height: 100%
+  min-width: 20px
+  min-height: 20px
+  margin: 1rem auto 0rem
+  text-align: center
+  color: $light-grey
+  background-repeat: no-repeat
+  
+
+.project-contributor-image
+  
+  height: 65%
+  width: 65%
+  margin: 1rem auto 1rem
+  
+
+.project-funder
+  font-family: Glacial Indifference Bold
+
+.project-sidebar
+  background-color: #ff754321
+  background-size: cover
+  padding-top: 1rem
+  text-align: center
+  display: flex
+  align-content: center
+  flex-direction: column 
+  width: 10rem !important
+
+
+.project-sidebar-title
+  font-size: 1rem
+  font-weight: 900
+  font-family: Glacial Indifference
+  margin-bottom: 1rem
+
+.project-sidebar-name
+  font-size: .9rem
+  font-weight: 700
+  font-family: Montserrat Light
+  margin-bottom: 1rem
+  a
+    color: $black
+    &:hover
+      color: $orange
+
+
+.project-section
+  font-size: 1.2rem
+  margin: 4rem 0 4rem
+
+.project-section-image-container
+  max-width: 100%
+  max-height: 100%
+  min-width: 100px
+  min-height: 100px
+  margin: 4rem auto 0rem
+  padding: 4rem 0 0
+  // background-size: contain
+  // background-position: center
+  // display: flex
+  // justify-content: center
+  // align-items: center 
+  //flex-basis: 2
+  background-repeat: no-repeat
+  text-align: center
+  color: $light-grey 
+
+.project-section-image
+  max-width: 80%
+  max-height: 80%
+  
+  min-width: 100px
+  min-height: 100px
+  margin: 0 auto
+
+.shiny-description-container
+  text-align: center
+  margin: 0 20% 2rem
+  border-radius: 5px
+  box-shadow: 2px 2px 3px 3px #888888
+  font-size: 1.25rem
+  font-family: Glacial Indifference
+
+.shiny-app-container
+  border-radius: 5px
+  box-shadow: 2px 2px 3px 3px #888888
+  height: 100vh
+
+.shiny-roll-item-container
+  font-family: Glacial Indifference
+  
+  
+.about-page-div
+  font-family: Glacial Indifference  
+
+.project-page-div
+  font-family: Glacial Indifference   
+  
 .dad-joke-container
   display: flex
   flex-direction: column
@@ -220,22 +418,13 @@ $section-padding: 1rem 1.5rem
 .dad-joke-question
   font-size: 2rem
   font-weight: 700
-  font-family: Glacial Indifference Bold
+  font-family: Montserrat Light
 
 .dad-joke-answer
   font-size: 2rem
   font-weight: 500
-  font-family: Glacial Indeifference
+  font-family: Montserrat Light
 
-footer.footer
-  background-color: $light-grey
-  height: 50px
-  
-
-.copywrite
-  width: 100%
-  padding: .25rem 0rem .25rem
-  color: $dark-grey
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -264,6 +453,9 @@ $menu-label-color: $white-ter
 // project roll
 .project-title
   color: $title-color
+  font-family: Glacial Indifference 
+.project-subtitle
+  font-family: Glacial Indifference
 // blog roll
 .blog-list-item.is-featured
   background-color: $yellow-fade

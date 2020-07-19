@@ -8,6 +8,12 @@ description: >-
   vegetables, and I do science! I recently went and took penetrometer
   measurements (with some helpers).  I'm processing the data, but expect a Shiny
   App soon....
-featuredproject: true
+featuredproject: false
+sections:
+  - text: >-
+      Soil compaction is a real concern for a lot of farmers. The [Archontoulis
+      Lab](https://www.archontoulislab.com/) was generous enough to let me use
+      our penetrometer to measure soil compaction on several fields around
+      Mustard Seed.
 ---
-Soil compaction is a real concern for a lot of farmers. The [Archontoulis Lab](https://www.archontoulislab.com/) was generous enough to let me use our penetrometer to measure soil compaction on several fields around Mustard Seed.
+

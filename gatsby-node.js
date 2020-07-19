@@ -3,6 +3,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { lte } = require('lodash')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -32,18 +33,24 @@ exports.createPages = ({ actions, graphql }) => {
     const pages = result.data.allMarkdownRemark.edges
 
     pages.forEach(edge => {
-      const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        //tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
+      let id = edge.node.id;
+      /* 
+       added ternary to check for templateKey so that it does not try to create a page for non-templated page.... probably a smarter way to do this   
+       */ 
+      (edge.node.frontmatter.templateKey != null) ? 
+        
+        createPage({
+          path: edge.node.fields.slug,
+          //tags: edge.node.frontmatter.tags,
+          component: path.resolve(
+            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          ),
+          // additional data can be passed via context
+          context: {
+            id,
+          },
+        }) : null
+
     })
   })
 }
