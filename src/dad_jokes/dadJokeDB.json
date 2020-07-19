@@ -103,6 +103,7 @@
         },
 		{
             "setup": "A sea monster ate a ship and was like 'I can't believe I ate the hull thing."
+<<<<<<< HEAD
         },
 		{
             "setup": "What happened when the computer fell on the floor?",
@@ -139,6 +140,8 @@
 		{
             "setup": "Why don't photons check bags at the airport?",
 			"punchline": "Because they are travelling light."
+=======
+>>>>>>> fcd72ffda9ab2770816d722dd81af777edc0baba
         }
     ]
 }
