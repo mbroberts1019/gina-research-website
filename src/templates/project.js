@@ -23,7 +23,7 @@ export const ProjectTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column project-main is-11">
+          <div className="column project-main is-10">
             <div className="project-banner">
               <div className="project-banner-image-container margin-top-0">
                 <PreviewCompatibleImage imageInfo={featuredimage}/>
@@ -44,7 +44,7 @@ export const ProjectTemplate = ({
             </div>
           </div>
 
-          {(funding || contributors) && <div className='project-sidebar column is-1'>
+          {(funding || contributors) && <div className='project-sidebar column is-2'>
             <div className="project-sidebar-title">Funded by:</div>
             {funding ? funding.map((funder, index) => {
               return (
