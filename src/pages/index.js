@@ -82,6 +82,7 @@ export default class Index extends React.Component {
           </div>
 
         </section>
+        <hr className= "homepage-hr"></hr>
         <section>
           <div className= "home-cv-container">
             <div className= "home-cv-column">
