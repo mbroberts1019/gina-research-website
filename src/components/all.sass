@@ -95,7 +95,7 @@ footer
   background-size: contain
   background-position: center
   background-repeat: no-repeat
-  flex: 1 0 auto
+  //flex: 1 0 auto
   padding: 0
   margin: 1rem .5rem 0 
   border-radius: 20px
@@ -103,13 +103,13 @@ footer
 
 .home-banner-tile-avatar
   margin: auto
-  height: 80%
-  width: 60%
+  height: 100%
+  width: 100%
   border-radius: 50% !important
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  box-shadow: 1px 1px 5px 5px $purple
+  box-shadow: 2px 2px 3px 3px #888888
   //padding: 1vh 5vh  
 .home-avatar-name
   font-family: "Glacial Indifference"
@@ -137,11 +137,11 @@ footer
   align-items: center
   width: 100%
   flex-wrap: wrap
-  justify-content: center
+  justify-content: space-around
   
 .homepage-hr
   width: 75%
-  margin: 4rem auto 3rem 
+  margin: 3rem auto 1rem 
 
 // Homepage CV lists
 .home-cv-container
@@ -337,7 +337,7 @@ footer
   display: flex
   align-content: center
   flex-direction: column 
-  width: 10rem !important
+  min-width: 10rem !important
 
 
 .project-sidebar-title
@@ -478,7 +478,6 @@ $menu-label-color: $white-ter
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
-
 +mobile
   .blog-list-item header
     display: block
