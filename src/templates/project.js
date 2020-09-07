@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql} from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ProjectSection from '../components/ProjectSection'
@@ -70,7 +70,11 @@ export const ProjectTemplate = ({
                 <div key={index} className='project-funder'>
                   {/* <div className="project-contributor-image-container margin-top-0"> */}
                       <div className="project-contributor-image">
-                      <PreviewCompatibleImage imageInfo={{image: contributor.avatar, style: {borderRadius: "50%"}}} style={{"border-radius": "50%"}}/>
+                      <PreviewCompatibleImage 
+                        imageInfo={{
+                          image: contributor.avatar, 
+                          preferredImageStyle: {borderRadius: "50%"}
+                        }} />
                       </div>
                     {/* </div> */}
                   <div className="project-sidebar-name">
