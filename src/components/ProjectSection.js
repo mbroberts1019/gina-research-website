@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const ProjectSection = ({sectionInfo, index}) => {

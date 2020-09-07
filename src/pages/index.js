@@ -26,15 +26,11 @@ export default class Index extends React.Component {
     }
   }
 
-
-
-
-  componentWillMount() {
+  componentDidMount() {
     let joke = getJokes()
     this.setState(
       this.state.joke = joke
     )
-
   }
 
   render() {
