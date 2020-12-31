@@ -6,5 +6,6 @@ description: >-
   management constraints. 
 featuredimage: /img/image_2020-12-31_115029.png
 url: 'https://vanichols.shinyapps.io/MidwestRyeCoverCrop/'
+featuredshiny: true
 ---
 
