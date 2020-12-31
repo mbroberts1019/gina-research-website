@@ -1,36 +1,19 @@
 ---
 title: Homepage
 bio: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-  in culpa qui officia deserunt mollit anim id est laborum.
+  I am a scientist, generally interested in how we can grow food without
+  destroying the environment. I like approaching this question using data. I
+  also enjoy making data accessible and impactful through visualizations and
+  stories. 
 
 
-
-
-  **BOLD**
-
-
-  *Italian*
-
-
-  ### `Code H3`
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-  in culpa qui officia deserunt mollit anim id est laborum.
+  You can see my general resume here (Mikey I need help here).
 education:
-  - dates: 2009 - 2015
-    institute: School for Wayward Scientists
-  - dates: 2017 - 2020
-    institute: The Mean Streets of Ames
-outreach: []
+  - dates: (anticipated graduation Aug 2021)
+    institute: 'Ph.D. Crop Physiology, Iowa State University'
+  - dates: ''
+    institute: 'M.Sc. Plant Breeding, Washington State University'
+  - institute: 'M.Sc. Sustainable Agriculture & Crop Physiology, Iowa State University'
+  - institute: B.Sc. Colorado School of Mines
 ---
 
