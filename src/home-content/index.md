@@ -14,6 +14,6 @@ education:
   - dates: ''
     institute: 'M.Sc. Plant Breeding, Washington State University'
   - institute: 'M.Sc. Sustainable Agriculture & Crop Physiology, Iowa State University'
-  - institute: B.Sc. Colorado School of Mines
+  - institute: 'B.Sc. Chemical Engineering, Colorado School of Mines'
 ---
 
