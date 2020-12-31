@@ -7,6 +7,7 @@ bio: >-
   stories. 
 
 
+
   You can see my general resume here (Mikey I need help here).
 education:
   - dates: (anticipated graduation Aug 2021)
