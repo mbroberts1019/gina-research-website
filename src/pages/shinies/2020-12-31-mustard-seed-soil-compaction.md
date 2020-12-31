@@ -6,5 +6,6 @@ description: >-
   2019. 
 featuredimage: /img/mustardseed-hex.PNG
 url: 'https://vanichols.shinyapps.io/MustardSeedPenetrometer/'
+featuredshiny: true
 ---
 
