@@ -1,7 +1,7 @@
 ---
 title: Homepage
 bio: >-
-  I am a scientist, generally interested in how we can grow food without
+  I am a scientist generally interested in how we can grow food without
   destroying the environment. I like approaching this question using data. I
   also enjoy making data accessible and impactful through visualizations and
   stories. 
