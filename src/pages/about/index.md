@@ -1,36 +1,22 @@
 ---
 templateKey: about-page
-title: It's all connected.
+title: Stuff for...
 ---
-### Public Research
+### Scientific Audience
 
-I am currently a PhD student at Iowa State University, studying under the tutelage of Drs. Sotirios Archontoulis and Matt Liebman. Generally, I'm interested in examining the impacts of diversifying crop rotations to include more than two crops (which is more of an alteration than a rotation). I use R and APSIM to help with these endeavors. 
+See my [google scholar page](https://scholar.google.com/citations?user=h4roCDAAAAAJ&hl=en). Google is better at keeping track than I am. 
 
-### Farmer Collaborators
+I am proud to have published data from many of my research projects, making them more reproducible. Those are available here:
+* Field data on the [effects of long-term cover cropping on weed seedbanks](https://iastate.figshare.com/articles/dataset/Long_Term_Cover_Cropping_Effects_on_Weed_Seedbanks/12762011/1)
+* Dataset used for a meta-analysis on [effects of cover cropping on weeds](https://iastate.figshare.com/articles/dataset/Effect_of_cover_crops_on_weed_biomass_and_density_in_the_US_Midwest_Corn_Belt_meta-analysis_dataset/11933214)
+* Dataset used for a meta-analysis on [effects of crop sequence diversification on weeds](https://iastate.figshare.com/articles/dataset/Effect_of_crop_rotation_on_weed_biomass_and_density_literature_summary/7771010)
 
-We are lucky in Ames to have the [Practical Farmers of Iowa](https://practicalfarmers.org/) close by, so I often rely on them to connect me with farmers for some of my research. I also volunteer at Mustard Seed Community Farm (in exchange for vegetables), and like to use my science on them when they let me (look at the Shiny tab for an example). 
+### Farming Audience
 
-### Teaching
+* [Practical Famers of Iowa](https://practicalfarmers.org) Farminar '[Cereal Rye for Weed Management](https://www.youtube.com/watch?v=OClTW9B231c)'
 
-I developed a new class at Iowa State University to help ease students into using R in a welcoming environment. And by using R I mean using the [tidyverse!](https://www.tidyverse.org/) We even have our own hexsticker to show we are Rgronomists (see Teaching tab for more info).  
+* Practical Famers of Iowa Cover Crop Bootcamp '[Weeds 2.0](https://www.youtube.com/watch?v=VcYj-kGR5jg&feature=youtu.be)'
 
-```
-sass_teacher <- function(mychoice){
- 
-  if_else(mychoice == "a", print("stupid"),
-          if_else(mychoice == "b", print("feminist"),
-                   if_else (mychoice == "c", print("off topic"))
 
-  if (mychoice !%in% c("a", "b", "c"), print("does not follow directions"))
-
-}
-```
-
-### Biking
-
-I love to ride my bicycle. Studded tires and flat topography make it possible to do so all year round in Iowa! There is even hill biking in Iowa. I get great ideas when I'm biking, like 'my yield map would look great in a Pamplemousse color palette'. And it did. Thanks  Johannes Bjork, and sorry I can't find the Umlaut for your name.  
-
-```
-library(remotes)
-remotes::install_github("johannesbjork/LaCroixColoR")
-```
+### General Audience
+[Green Lands Blue Waters](https://greenlandsbluewaters.org) Civic Scientist Series '[The Farmer](https://greenlandsbluewaters.org/civic-scientists-series/#gina-nichols-iowa-state-university)'
