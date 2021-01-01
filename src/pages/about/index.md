@@ -12,7 +12,7 @@ I did try doing a pre-print for one paper, and that one is a google-mess. The ac
 
 *Datasets*
 
-I am proud to have published data from many of my research projects, making them more reproducible. Those datasets are available here:
+I am proud to have published the data from many of my research projects, making them more reproducible. Those datasets are available here:
 * [Field data](https://iastate.figshare.com/articles/dataset/Long_Term_Cover_Cropping_Effects_on_Weed_Seedbanks/12762011/1) on the effects of long-term cover cropping on weed seedbanks
 * [Dataset used for a meta-analysis](https://iastate.figshare.com/articles/dataset/Effect_of_cover_crops_on_weed_biomass_and_density_in_the_US_Midwest_Corn_Belt_meta-analysis_dataset/11933214) on effects of cover cropping on weeds
 * [Dataset used for a meta-analysis](https://iastate.figshare.com/articles/dataset/Effect_of_crop_rotation_on_weed_biomass_and_density_literature_summary/7771010) on effects of crop sequence diversification on weeds
