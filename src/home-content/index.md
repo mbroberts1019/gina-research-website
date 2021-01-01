@@ -2,13 +2,15 @@
 title: Homepage
 bio: >-
   I am a scientist generally interested in how we can grow food without
-  destroying the environment. I like approaching this question using data. I
-  also enjoy making data accessible and impactful through visualizations and
-  stories. 
+  destroying the environment (physical and social). I like approaching this
+  question using data. I also enjoy making data accessible and impactful through
+  visualizations and stories. 
 
 
+  Want to contact me? Shoot me an email. 
 
-  You can see my general resume here (Mikey I need help here).
+
+  virginia(dot)nichols(replace this with at)gmail(dot)com
 education:
   - dates: (anticipated graduation Aug 2021)
     institute: 'Ph.D. Crop Physiology, Iowa State University'
