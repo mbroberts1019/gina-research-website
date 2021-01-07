@@ -4,13 +4,13 @@ title: Stuff for...
 ---
 ### Scientific Audiences
 
-*Papers*
+#### *Papers*
 
 See my [google scholar page](https://scholar.google.com/citations?user=h4roCDAAAAAJ&hl=en). Google is better at keeping track than I am. 
 
 I did try doing a pre-print for one paper, and that one is a google-mess. The actual open-source, published version can be found [here](https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/ael2.20022). 
 
-*Datasets*
+#### *Datasets*
 
 I am proud to have published the data from many of my research projects, making them more reproducible. Those datasets are available here:
 
@@ -31,5 +31,6 @@ The analyses accompanying the datasets are available on [my github page](https:/
 * [A talk](https://www.youtube.com/watch?v=wFpA5J1UEV4&feature=youtu.be) I gave about [Benford's Law](https://en.wikipedia.org/wiki/Benford%27s_law), before the 2020 election nonsense
 
 ### Extra
+
 * A walk-through of setting up git and RStudio on a PC, written in plain language. [Here](https://github.com/vanichols/dataManagement/blob/master/How-to-set-up-Github-with-RStudio.pdf).
-* Iowa State University community R learning group I help(ed) organize (LunchinatoRs/Rgronomists) [youtube channel](https://www.youtube.com/channel/UC2kj0UmZC6o_C27eASx1SJg). 
+* Iowa State University community R learning group I help(ed) organize (LunchinatoRs/Rgronomists) [youtube channel](https://www.youtube.com/channel/UC2kj0UmZC6o_C27eASx1SJg).
