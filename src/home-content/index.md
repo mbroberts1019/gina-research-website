@@ -11,6 +11,9 @@ bio: >-
 
 
   virginia(dot)nichols(replace this with at)gmail(dot)com
+
+
+  Hablo espanol, mas o menos.
 education:
   - dates: (anticipated graduation Aug 2021)
     institute: 'Ph.D. Crop Physiology, Iowa State University'
