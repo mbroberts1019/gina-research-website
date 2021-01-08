@@ -20,6 +20,11 @@ I am proud to have published the data from many of my research projects, making 
 
 The analyses accompanying the datasets are available on [my github page](https://github.com/vanichols), which is admittedly a bit of a mess right now. 
 
+#### *Resources*
+* A walk-through of setting up git and RStudio on a PC, written in plain language. [Here](https://github.com/vanichols/dataManagement/blob/master/How-to-set-up-Github-with-RStudio.pdf).
+* Iowa State University community R learning group I help(ed) organize (LunchinatoRs/Rgronomists) [youtube channel](https://www.youtube.com/channel/UC2kj0UmZC6o_C27eASx1SJg).
+
+
 ### Farming Audiences
 
 * [Practical Famers of Iowa](https://practicalfarmers.org) Farminar '[Cereal Rye for Weed Management](https://www.youtube.com/watch?v=OClTW9B231c)'
@@ -30,7 +35,6 @@ The analyses accompanying the datasets are available on [my github page](https:/
 * [Green Lands Blue Waters](https://greenlandsbluewaters.org) Civic Scientist Series '[The Farmer](https://greenlandsbluewaters.org/civic-scientists-series/#gina-nichols-iowa-state-university)'
 * [A talk](https://www.youtube.com/watch?v=wFpA5J1UEV4&feature=youtu.be) I gave about [Benford's Law](https://en.wikipedia.org/wiki/Benford%27s_law), before the 2020 election nonsense
 
-### Extra
-
-* A walk-through of setting up git and RStudio on a PC, written in plain language. [Here](https://github.com/vanichols/dataManagement/blob/master/How-to-set-up-Github-with-RStudio.pdf).
-* Iowa State University community R learning group I help(ed) organize (LunchinatoRs/Rgronomists) [youtube channel](https://www.youtube.com/channel/UC2kj0UmZC6o_C27eASx1SJg).
+### Extra 
+* Ames Bicycle Coalition [winter biking video](https://www.youtube.com/watch?v=5GLEx-_9PLM)
+* Ames Bicycle Coalition [bicycle safety video](https://www.youtube.com/watch?v=0SDBH19fg9E&feature=youtu.be)
