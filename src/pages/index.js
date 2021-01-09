@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
 import Bio from '../components/Bio'
 import EducationList  from '../components/EducationList'
+import Avatar from "../components/Avatar"
 
 
 function encode(data) {
@@ -36,14 +37,14 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section>
-          <div className='four-tile-container'>
-            <div className='home-banner-tile '>
-              <div className='home-banner-tile-avatar' style={{
-                backgroundImage: `url('/img/Picture-day2019.jpg')`,
-              }}></div>
-              <p className="home-avatar-name">Virginia Nichols M.S.</p>
-            </div>
+        <section className = "home-banner">
+          <div className="avatar-banner">
+            <Avatar/>
+            <p className="home-avatar-name">Virginia Nichols M.S.</p>
+          </div>
+        
+          <div className='three-tile-container'>
+            
             <div className='home-banner-tile home-banner-tile-1'
               style={{
                 backgroundImage: `url('/img/hometile-1.PNG')`,
@@ -58,14 +59,23 @@ export default class Index extends React.Component {
               }}></div>
           </div>
         </section>
-        <hr className= "homepage-hr"></hr>
-        <section >
-          <div className="warning-banner">
-            <h3> ⚠️  This Site is Under Construction  ⚠️</h3>
-            <h5> Enjoy a Dad joke</h5>
-          </div>
+        
+        <section className= "home-cv-container">
+            <div className ="home-cv-column-1">
+              <Bio/>
+              
+            </div>
+            <div className ="home-cv-column-2">
+              <h2 className= "home-cv-title">Education</h2>
+              <ul className="home-cv-list">  
+                <EducationList/>
+              </ul>
+            </div>
         </section>
+        
+        {/* <hr className= "homepage-hr"></hr> */}
         <section>
+          <div className="dad-joke-section-title"> Enjoy a Dad joke</div>
           <div className="dad-joke-container">
             {!this.state.joke.setup ? null :
               <div className="dad-joke-question">
@@ -78,19 +88,9 @@ export default class Index extends React.Component {
           </div>
 
         </section>
-        <hr className= "homepage-hr"></hr>
-        <section>
-          <div className= "home-cv-container">
-            <div className= "home-cv-column">
-              <Bio/>
-            </div>
-            <div className= "home-cv-column">
-              <h2 className= "home-cv-title">Background</h2>
-              <EducationList/>
-            </div>
-          </div>
-        </section>
-        <hr className= "homepage-hr"></hr>
+        
+        
+        
         
       </Layout>
     )
