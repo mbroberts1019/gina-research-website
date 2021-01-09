@@ -65,7 +65,7 @@ const Navbar = class extends React.Component {
                 Stuff
               </Link>
               <Link className="navbar-item" to="/shinies">
-                Shinies
+                Interactive Shinies
               </Link>
             </div>
             <div className="navbar-end has-text-centered">

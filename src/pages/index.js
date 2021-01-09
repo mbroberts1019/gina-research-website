@@ -14,7 +14,6 @@ function encode(data) {
     .join('&')
 }
 
-
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
@@ -42,9 +41,7 @@ export default class Index extends React.Component {
             <Avatar/>
             <p className="home-avatar-name">Virginia Nichols M.S.</p>
           </div>
-        
-          <div className='three-tile-container'>
-            
+          <div className='three-tile-container'>  
             <div className='home-banner-tile home-banner-tile-1'
               style={{
                 backgroundImage: `url('/img/hometile-1.PNG')`,
@@ -62,8 +59,7 @@ export default class Index extends React.Component {
         
         <section className= "home-cv-container">
             <div className ="home-cv-column-1">
-              <Bio/>
-              
+              <Bio/> 
             </div>
             <div className ="home-cv-column-2">
               <h2 className= "home-cv-title">Education</h2>
@@ -75,7 +71,7 @@ export default class Index extends React.Component {
         
         {/* <hr className= "homepage-hr"></hr> */}
         <section>
-          <div className="dad-joke-section-title"> Enjoy a Dad joke</div>
+          <div className="dad-joke-section-title"> Enjoy a joke</div>
           <div className="dad-joke-container">
             {!this.state.joke.setup ? null :
               <div className="dad-joke-question">
@@ -86,12 +82,7 @@ export default class Index extends React.Component {
                 {this.state.joke.punchline}
               </div>}
           </div>
-
-        </section>
-        
-        
-        
-        
+        </section> 
       </Layout>
     )
   }
