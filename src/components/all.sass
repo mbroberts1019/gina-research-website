@@ -101,20 +101,42 @@ footer
   border-radius: 20px
   
 
-.home-banner-tile-avatar
+// .home-banner-tile-avatar
+//   margin: auto
+//   height: 100%
+//   width: 100%
+//   border-radius: 5px !important
+//   // background-size: cover
+//   // background-position: center
+//   // background-repeat: no-repeat
+//   box-shadow: 2px 2px 3px 3px #888888
+//   //padding: 1vh 5vh  
+
+.avatar-banner
+  margin: 10px auto 10px
+  padding: 0 0 0 10px
+  
+
+.home-avatar-image
   margin: auto
-  height: 100%
-  width: 100%
+  height: 15rem
+  width: 15rem
   border-radius: 50% !important
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
+  // background-size: cover
+  // background-position: center
+  // background-repeat: no-repeat
   box-shadow: 2px 2px 3px 3px #888888
   //padding: 1vh 5vh  
+
+.home-banner
+   display: flex
+   flex-direction: row
+   align-items: flex-start
+
 .home-avatar-name
   font-family: "Glacial Indifference"
   font-weight: 700
-  font-size: 1.3rem
+  font-size: 1.6rem
   color: $black
   text-align: center
   margin-top: .5rem
@@ -131,7 +153,7 @@ footer
   background-color: $blue
   box-shadow: 2px 2px 3px 3px #888888
 
-.four-tile-container
+.three-tile-container
   display: flex
   flex-direction: row
   align-items: center
@@ -142,40 +164,55 @@ footer
 .homepage-hr
   width: 75%
   margin: 3rem auto 1rem 
+  border-top: 1px solid  #888888
 
 // Homepage CV lists
 .home-cv-container
   display: flex
-  flex-direction: row
+  flex-direction: column
+  align-items: center
+  
 
-.home-cv-column  
-  width: 50%
+.home-cv-column-1  
+  width: 70%
   //border: .5px solid $light-grey
   border-radius: 5px
   margin: 2rem 1rem 2rem
-  box-shadow: 2px 2px 2px 3px #888888
+  //box-shadow: 0px 2px 2px -3px #888888
+
+.home-cv-column-2 
+  width: 70%
+  //border: .5px solid $light-grey
+  border-radius: 5px
+  margin: 2rem 1rem 2rem
+  //box-shadow: 0px 2px 2px -3px #888888
 
 .home-cv-title
   color: $black
   font-family: Glacial Indifference
-  font-weight: 900
-  font-size: 2.3rem
-  text-align: center
+  font-weight: 600
+  font-size: 1.6rem
+  text-align: center !important
   padding-top: .5rem
-  border-bottom: 1px solid #d6d2d2
+  //border-bottom: 1px solid #d6d2d2
+  
+.home-cv-list
+  
   
 
 .home-cv-item    
+  width: 100%
   padding: 1rem 1rem 1rem
   display: flex
   flex-direction: row
   justify-content: space-between
   font-size: 1.2rem
-  font-weight: 700
+  font-weight: 400
   font-family: Glacial Indifference
   align-items: center
-  text-align: center
-  background-image: linear-gradient(white, #e0dddd91 99%);
+  //text-align: center
+  //background-image: linear-gradient(white, #ebe7e791 99%);
+
 .home-cv-item-logo
   margin-right: 1rem
   font-size: 1.5rem
@@ -184,6 +221,14 @@ footer
   font-size: 1.25rem
   padding: .5rem 1rem .5rem
   font-family: Glacial Indifference
+  //width: 90%
+  margin: 0 auto 0
+  // margin: 0 auto 0
+  // width: 75%
+  // border-bottom: .5px solid $light-grey
+  // border-right: .5px solid $light-grey
+  // //border-radius: 5px
+  // box-shadow: 0px 2px 2px -3px #888888
 
 
   
@@ -286,8 +331,8 @@ footer
 .dad-joke-section-title
   margin: 0 auto 0
   width: 25%
-  font-size: 2rem
-  font-weight: 700
+  font-size: 1.8rem
+  font-weight: 900
   font-family: Montserrat Light
   text-align: center
   padding: 1rem 0 .5rem
@@ -299,12 +344,12 @@ footer
   padding: 1rem 0 .5rem
 
 .dad-joke-question
-  font-size: 2rem
+  font-size: 1.6rem
   font-weight: 700
   font-family: Montserrat Light
 
 .dad-joke-answer
-  font-size: 2rem
+  font-size: 1.6rem
   font-weight: 500
   font-family: Montserrat Light
 
