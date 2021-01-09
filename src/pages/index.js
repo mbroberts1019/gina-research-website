@@ -73,7 +73,7 @@ export default class Index extends React.Component {
             </div>
         </section>
         
-        <hr className= "homepage-hr"></hr>
+        {/* <hr className= "homepage-hr"></hr> */}
         <section>
           <div className="dad-joke-section-title"> Enjoy a Dad joke</div>
           <div className="dad-joke-container">
