@@ -169,23 +169,22 @@ footer
 // Homepage CV lists
 .home-cv-container
   display: flex
-  flex-direction: column
-  align-items: center
+  flex-direction: row
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-items: space-between
   
 
 .home-cv-column-1  
-  width: 70%
-  //border: .5px solid $light-grey
+  flex-grow: 1
   border-radius: 5px
   margin: 2rem 1rem 2rem
-  //box-shadow: 0px 2px 2px -3px #888888
-
+  
 .home-cv-column-2 
-  width: 70%
-  //border: .5px solid $light-grey
+  flex-grow: 1
   border-radius: 5px
   margin: 2rem 1rem 2rem
-  //box-shadow: 0px 2px 2px -3px #888888
+ 
 
 .home-cv-title
   color: $black
@@ -208,12 +207,11 @@ footer
   display: flex
   flex-direction: row
   justify-content: space-between
-  font-size: 1.2rem
+  font-size: 1.1rem
   font-weight: 400
   font-family: Glacial Indifference
   align-items: center
-  //text-align: center
-  //background-image: linear-gradient(white, #ebe7e791 99%);
+
 
 .home-cv-item-logo
   margin-right: 1rem
@@ -223,16 +221,8 @@ footer
   font-size: 1.25rem
   padding: .5rem 1rem .5rem
   font-family: Glacial Indifference
-  //width: 90%
+  width: 90%
   margin: 0 auto 0
-  // margin: 0 auto 0
-  // width: 75%
-  // border-bottom: .5px solid $light-grey
-  // border-right: .5px solid $light-grey
-  // //border-radius: 5px
-  // box-shadow: 0px 2px 2px -3px #888888
-
-
   
 // Helper Classes
 .full-width-image-container
@@ -341,12 +331,12 @@ footer
 
 .dad-joke-section-title
   margin: 0 auto 0
-  width: 25%
-  font-size: 1.8rem
+  width: 50%
+  font-size: 1.6rem
   font-weight: 900
   font-family: Montserrat Light
   text-align: center
-  padding: 1rem 0 .5rem
+  padding: 0rem 0 .5rem
   border-bottom: 1px solid $black
 .dad-joke-container
   display: flex
@@ -355,12 +345,12 @@ footer
   padding: 1rem 0 .5rem
 
 .dad-joke-question
-  font-size: 1.6rem
+  font-size: 1.4rem
   font-weight: 700
   font-family: Montserrat Light
 
 .dad-joke-answer
-  font-size: 1.6rem
+  font-size: 1.4rem
   font-weight: 500
   font-family: Montserrat Light
 

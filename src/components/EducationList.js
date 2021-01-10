@@ -24,7 +24,7 @@ const Educationlist = () => {
            return <li key={i} className="home-cv-item">
                    
                     <span><span className="home-cv-item-logo"> 🎓 </span>{data.institute}</span> 
-                    <span>{data.dates}</span>
+                    
                 </li>})}
     </ul>
   )}

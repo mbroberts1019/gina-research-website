@@ -56,10 +56,26 @@ export default class Index extends React.Component {
               }}></div>
           </div>
         </section>
-        
+        <section>
+          <div className ="home-bio-container">
+              <Bio/> 
+          </div>
+
+        </section>
+
         <section className= "home-cv-container">
             <div className ="home-cv-column-1">
-              <Bio/> 
+            <div className="dad-joke-section-title"> Enjoy a joke</div>
+              <div className="dad-joke-container">
+                {!this.state.joke.setup ? null :
+                  <div className="dad-joke-question">
+                    {this.state.joke.setup}
+                  </div>}
+                {!this.state.joke.punchline | !this.state.joke.setup ? null :
+                  <div className="dad-joke-answer">
+                    {this.state.joke.punchline}
+              </div>}
+          </div>
             </div>
             <div className ="home-cv-column-2">
               <h2 className= "home-cv-title">Education</h2>
@@ -70,19 +86,7 @@ export default class Index extends React.Component {
         </section>
         
         {/* <hr className= "homepage-hr"></hr> */}
-        <section>
-          <div className="dad-joke-section-title"> Enjoy a joke</div>
-          <div className="dad-joke-container">
-            {!this.state.joke.setup ? null :
-              <div className="dad-joke-question">
-                {this.state.joke.setup}
-              </div>}
-            {!this.state.joke.punchline | !this.state.joke.setup ? null :
-              <div className="dad-joke-answer">
-                {this.state.joke.punchline}
-              </div>}
-          </div>
-        </section> 
+        
       </Layout>
     )
   }
