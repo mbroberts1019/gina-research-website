@@ -172,16 +172,17 @@ footer
   flex-direction: row
   align-items: flex-start
   flex-wrap: wrap
-  justify-items: space-between
+  justify-items: space-around
+
   
 
 .home-cv-column-1  
-  flex-grow: 1
+  flex: 1 1 400px;
   border-radius: 5px
   margin: 2rem 1rem 2rem
   
 .home-cv-column-2 
-  flex-grow: 1
+  flex: 1 1 500px;
   border-radius: 5px
   margin: 2rem 1rem 2rem
  
@@ -382,6 +383,7 @@ $menu-label-color: $white-ter
 // blog roll
 .blog-list-item.is-featured
   background-color: $yellow-fade
+  height: 100%
   
 .blog-list-item header
   display: flex
