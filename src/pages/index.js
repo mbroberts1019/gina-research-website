@@ -4,6 +4,8 @@ import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
 import Bio from '../components/Bio'
+import ContactMe from '../components/ContactMe'
+
 import EducationList  from '../components/EducationList'
 import Avatar from "../components/Avatar"
 
@@ -85,6 +87,12 @@ export default class Index extends React.Component {
                 <EducationList/>
               </ul>
             </div>
+        </section>
+        <section>
+          <div className ="home-contact-container">
+              <ContactMe/> 
+          </div>
+
         </section>
         
         {/* <hr className= "homepage-hr"></hr> */}
