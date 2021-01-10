@@ -43,7 +43,6 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Sign" style={{ width: '100px'}} />
-              <h2>Home</h2>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -67,19 +66,20 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/shinies">
                 Interactive Shinies
               </Link>
+              <div className="navbar-item">
+                <a
+                  className="navbar-item"
+                  href="https://github.com/vanichols"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon">
+                    <img src={github} alt="Github" />
+                  </span>
+                </a>
+              </div>
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/mbroberts1019/gina-research-website"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
+            
           </div>
         </div>
       </nav>
