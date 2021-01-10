@@ -16,9 +16,9 @@ const TemplateWrapper = ({ children }) => {
         <meta name="description" content={description} />
 
         <link
-          rel="corn"
+          rel="icon"
           sizes="180x180"
-          href={`${withPrefix('/')}img/apple-icon.png`}
+          href={`${withPrefix('/')}img/favicon.ico`}
         />
         <link
           rel="icon"
