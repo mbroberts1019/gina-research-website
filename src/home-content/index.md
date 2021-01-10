@@ -16,8 +16,10 @@ bio: >-
   Hablo espanol, mas o menos.
 featuredimage: /img/Picture-day2019.jpg
 education:
-  - dates: (anticipated graduation Aug 2021)
-    institute: 'Ph.D. Crop Physiology, Iowa State University'
+  - dates: ''
+    institute: >-
+      Ph.D. Crop Physiology, Iowa State University (anticipated graduation Aug
+      2021)
   - dates: ''
     institute: 'M.Sc. Plant Breeding, Washington State University'
   - institute: 'M.Sc. Sustainable Agriculture & Crop Physiology, Iowa State University'
