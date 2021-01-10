@@ -33,6 +33,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Bio", name: "bio", widget: "markdown"}
+          - {label: "Contact", name: "contact", widget: "markdown"}
           - {label: "Featured Image", name: "featuredimage", widget: image}
           - label: "Education"
             name: "education"

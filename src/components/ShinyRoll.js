@@ -46,7 +46,10 @@ class ShinyRoll extends React.Component {
                     {shiny.frontmatter.description}
                   </span>
                   <span className="button" >
-                    <a className= "shiny-anchor" href={(shiny.frontmatter.url) ? shiny.frontmatter.url : ""}> Take me to it...</a>
+                    <a className= "shiny-anchor" 
+                    href={(shiny.frontmatter.url) ? shiny.frontmatter.url : ""}
+                    target="_blank"
+                    > Take me to it...</a>
                   </span>
                 </div>
               </article>

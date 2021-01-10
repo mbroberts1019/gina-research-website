@@ -41,25 +41,43 @@ export default class Index extends React.Component {
             <Avatar/>
             <p className="home-avatar-name">Virginia Nichols M.S.</p>
           </div>
-          <div className='three-tile-container'>  
-            <div className='home-banner-tile home-banner-tile-1'
-              style={{
-                backgroundImage: `url('/img/hometile-1.PNG')`,
-              }}></div>
-            <div className='home-banner-tile home-banner-tile-2'
-              style={{
-                backgroundImage: `url('/img/hometile-2.PNG')`,
-              }}></div>
-            <div className='home-banner-tile home-banner-tile-3'
-              style={{
-                backgroundImage: `url('/img/hometile-3.PNG')`,
-              }}></div>
-          </div>
+          <div className="interests-banner">
+            <div className='three-tile-container'>  
+              <div className='home-banner-tile home-banner-tile-1'
+                style={{
+                  backgroundImage: `url('/img/hometile-1.PNG')`,
+                }}></div>
+              <div className='home-banner-tile home-banner-tile-2'
+                style={{
+                  backgroundImage: `url('/img/hometile-2.PNG')`,
+                }}></div>
+              <div className='home-banner-tile home-banner-tile-3'
+                style={{
+                  backgroundImage: `url('/img/hometile-3.PNG')`,
+                }}></div>
+            </div>
+          </div>  
         </section>
-        
+        <section>
+          <div className ="home-bio-container">
+              <Bio/> 
+          </div>
+
+        </section>
+
         <section className= "home-cv-container">
             <div className ="home-cv-column-1">
-              <Bio/> 
+            <div className="dad-joke-section-title"> Enjoy a joke</div>
+              <div className="dad-joke-container">
+                {!this.state.joke.setup ? null :
+                  <div className="dad-joke-question">
+                    {this.state.joke.setup}
+                  </div>}
+                {!this.state.joke.punchline | !this.state.joke.setup ? null :
+                  <div className="dad-joke-answer">
+                    {this.state.joke.punchline}
+              </div>}
+          </div>
             </div>
             <div className ="home-cv-column-2">
               <h2 className= "home-cv-title">Education</h2>
@@ -70,19 +88,7 @@ export default class Index extends React.Component {
         </section>
         
         {/* <hr className= "homepage-hr"></hr> */}
-        <section>
-          <div className="dad-joke-section-title"> Enjoy a joke</div>
-          <div className="dad-joke-container">
-            {!this.state.joke.setup ? null :
-              <div className="dad-joke-question">
-                {this.state.joke.setup}
-              </div>}
-            {!this.state.joke.punchline | !this.state.joke.setup ? null :
-              <div className="dad-joke-answer">
-                {this.state.joke.punchline}
-              </div>}
-          </div>
-        </section> 
+        
       </Layout>
     )
   }
