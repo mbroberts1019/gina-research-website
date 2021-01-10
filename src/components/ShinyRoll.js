@@ -31,24 +31,24 @@ class ShinyRoll extends React.Component {
                     </div>
                   ) : null}
                   <p className="shiny-meta row is-1">
-                    <Link
-                      className="title .shiny-title"
-                      to={shiny.fields.slug}
+                    <div
+                      className="title shiny-title"
+                      
                     >
                       {shiny.frontmatter.title}
-                    </Link>
+                    </div>
 
                   </p>
                 </header>
 
-                <p>
+                <div>
                   <span className="subtitle is-size-5 is-block">
                     {shiny.frontmatter.description}
                   </span>
-                  <Link className="button" to={shiny.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                  <span className="button" >
+                    <a className= "shiny-anchor" href={(shiny.frontmatter.url) ? shiny.frontmatter.url : ""}> Take me to it...</a>
+                  </span>
+                </div>
               </article>
             </div> : null
           ))}
