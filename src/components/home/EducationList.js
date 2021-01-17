@@ -18,15 +18,18 @@ const Educationlist = () => {
   )
 
   return (
-      
     <ul>
        {markdownRemark.frontmatter.education.map((data, i) => {
            return <li key={i} className="home-cv-item">
-                   
-                    <span><span className="home-cv-item-logo"> 🎓 </span>{data.institute}</span> 
-                    
-                </li>})}
+                    <span>
+                      <span className="home-cv-item-logo"> 
+                        <span role="img" aria-label="grad hat emoji">🎓</span> 
+                      </span>
+                      {data.institute}
+                    </span>    
+                  </li>})}
     </ul>
-  )}
+  )
+}
 
 export default Educationlist

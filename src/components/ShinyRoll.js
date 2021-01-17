@@ -49,6 +49,7 @@ class ShinyRoll extends React.Component {
                     <a className= "shiny-anchor" 
                     href={(shiny.url) ? shiny.url : ""}
                     target="_blank"
+                    rel="noopener noreferrer"
                     > Take me to it...</a>
                   </span>
                 </div>
