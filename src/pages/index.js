@@ -64,9 +64,7 @@ export default class Index extends React.Component {
           <div className ="home-bio-container">
               <Bio/> 
           </div>
-
         </section>
-
         <section className= "home-cv-container">
             <div className ="home-cv-column-1">
             <div className="dad-joke-section-title"> Enjoy a joke</div>
@@ -92,17 +90,8 @@ export default class Index extends React.Component {
           <div className ="home-contact-container">
               <ContactMe/> 
           </div>
-
         </section>
-        
-        {/* <hr className= "homepage-hr"></hr> */}
-        
       </Layout>
     )
   }
 }
-
-
-
-
-
