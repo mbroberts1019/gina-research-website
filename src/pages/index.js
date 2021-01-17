@@ -1,6 +1,4 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import getJokes from '../dad_jokes/dadJokes'
 import Bio from '../components/Bio'
@@ -8,13 +6,6 @@ import ContactMe from '../components/ContactMe'
 
 import EducationList  from '../components/EducationList'
 import Avatar from "../components/Avatar"
-
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -29,10 +20,8 @@ export default class Index extends React.Component {
   }
 
   componentDidMount() {
-    let joke = getJokes()
-    this.setState(
-      this.state.joke = joke
-    )
+    let newJoke = getJokes()
+    this.setState({joke: newJoke})
   }
 
   render() {
