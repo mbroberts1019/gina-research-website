@@ -18,7 +18,6 @@ const Educationlist = () => {
   )
 
   return (
-      
     <ul>
        {markdownRemark.frontmatter.education.map((data, i) => {
            return <li key={i} className="home-cv-item">
@@ -30,6 +29,7 @@ const Educationlist = () => {
                     </span>    
                   </li>})}
     </ul>
-  )}
+  )
+}
 
 export default Educationlist

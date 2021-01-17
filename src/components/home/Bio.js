@@ -1,14 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ReactMarkdown from "react-markdown";
-const ContactMe = () => {
+const Bio = () => {
   const { markdownRemark } = useStaticQuery(
     graphql`
       query {
         markdownRemark(fileAbsolutePath: {regex: "/home-content/"}) {
           frontmatter {
             title
-            contact
+            bio
           }
         }
       }
@@ -16,11 +16,9 @@ const ContactMe = () => {
   )
 
   return (
-    <div className="home-contact-container">
-    <ReactMarkdown source={markdownRemark.frontmatter.contact}
-          
-        />  
+    <div className="home-bio-container">
+    <ReactMarkdown source={markdownRemark.frontmatter.bio} />  
     </div>
   )}
 
-export default ContactMe
+export default Bio

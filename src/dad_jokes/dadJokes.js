@@ -1,4 +1,3 @@
-// jshint esversion: 6
 import {jokes} from "./dadJokeDB.json"
 
 const getJokes = ()=>{

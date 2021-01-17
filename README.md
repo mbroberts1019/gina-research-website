@@ -1,2 +1,2 @@
-# I makes a change
-Maybe I fixed the stupid ssh key??
+# The Fabulous Website of Virginia Nichols
+Built with love using Gastby.js and NetlifyCMS

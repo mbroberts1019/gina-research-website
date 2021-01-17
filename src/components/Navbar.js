@@ -82,7 +82,6 @@ const Navbar = class extends React.Component {
                 </a>
               </div>
             </div>
-            
           </div>
         </div>
       </nav>
