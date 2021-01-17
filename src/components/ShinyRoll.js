@@ -1,53 +1,53 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class ShinyRoll extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: shinies } = data.allMarkdownRemark
-
+    const shinies  = data.markdownRemark.frontmatter.shinies
+    console.log(`data: ${JSON.stringify(data)}`)
+    console.log(`Shinies: ${shinies}`)
     return (
       <div className="columns is-multiline shiny-roll-item-container">
         {shinies &&
-          shinies.map(({ node: shiny }) => (
-            shiny.frontmatter.featuredshiny ?
+          shinies.map((shiny) => (
+            shiny.featuredshiny ?
            <div className="is-parent column is-6" key={shiny.id}>
               <article
-                className={`blog-list-item tile is-child box  ${
-                  shiny.frontmatter.featuredshiny ? 'is-featured' : ''
-                  }`}
+                className={`
+                  blog-list-item
+                  tile
+                  is-child
+                  box 
+                  ${shiny.featuredshiny ? 'is-featured' : ''}
+                `}
               >
                 <header>
-                  {shiny.frontmatter.featuredimage ? (
+                  {shiny.featuredimage ? (
                     <div className="featured-thumbnail row is-1">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: shiny.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for shiny ${shiny.frontmatter.title}`,
+                          image: shiny.featuredimage,
+                          alt: `featured image thumbnail for shiny ${shiny.title}`,
                         }}
                       />
                     </div>
                   ) : null}
                   <p className="shiny-meta row is-1">
-                    <div
-                      className="title shiny-title"
-                      
-                    >
-                      {shiny.frontmatter.title}
+                    <div className="title shiny-title">
+                      {shiny.title}
                     </div>
-
                   </p>
                 </header>
-
                 <div>
                   <span className="subtitle is-size-5 is-block">
-                    {shiny.frontmatter.description}
+                    {shiny.description}
                   </span>
                   <span className="button" >
                     <a className= "shiny-anchor" 
-                    href={(shiny.frontmatter.url) ? shiny.frontmatter.url : ""}
+                    href={(shiny.url) ? shiny.url : ""}
                     target="_blank"
                     > Take me to it...</a>
                   </span>
@@ -62,8 +62,10 @@ class ShinyRoll extends React.Component {
 
 ShinyRoll.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape ({
+        shinies: PropTypes.array
+      }),
     }),
   }),
 }
@@ -72,31 +74,22 @@ export default () => (
   <StaticQuery
     query={graphql`
       query ShinyQuery {
-        allMarkdownRemark(
-          filter: { frontmatter: { templateKey: { eq: "shiny" } } }
-        ) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 2048, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+        markdownRemark(fileAbsolutePath: {regex: "/shiny-list/"}) {
+          frontmatter {
+            shinies {
+              title
+              featuredimage {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
                   }
-                } 
-                url
-                description
-                featuredshiny
-              }    
+                }
+              } 
+              url
+              description
+              featuredshiny
             }
-          }
+          }    
         }
       }
     `}
