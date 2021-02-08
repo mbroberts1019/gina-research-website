@@ -22,7 +22,7 @@ shinies:
     title: Mustard Seed Soil Compaction
     url: 'https://vanichols.shinyapps.io/MustardSeedPenetrometer/'
   - description: >-
-      See data visualization projects related to crop biophysics - crop
+      See data visualization projects related to crop biophysics including crop
       water-use and incoming short-wave radiation visualizations.
     featuredimage: /img/hex-agron508.PNG
     featuredshiny: true
