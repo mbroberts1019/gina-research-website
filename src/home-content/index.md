@@ -15,8 +15,8 @@ featuredimage: /img/Picture-day2019.jpg
 education:
   - dates: ''
     institute: >-
-      Ph.D. Crop Physiology, Iowa State University (anticipated graduation Aug
-      2021)
+      Ph.D. Crop Physiology, Certificate in Data Science, Iowa State University
+      (anticipated graduation Aug 2021)
   - dates: ''
     institute: 'M.Sc. Plant Breeding, Washington State University'
   - institute: 'M.Sc. Sustainable Agriculture & Crop Physiology, Iowa State University'
