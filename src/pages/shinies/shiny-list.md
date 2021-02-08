@@ -8,13 +8,6 @@ shinies:
     title: CyChecks
     url: ' https://vanichols.shinyapps.io/CyChecks2019/'
   - description: >-
-      See data visualization projects related to crop biophysics - crop
-      water-use and incoming short-wave radiation visualizations.
-    featuredimage: /img/hex-agron508.PNG
-    featuredshiny: true
-    title: Agron508 Student Viz
-    url: 'https://andyvanl.shinyapps.io/AGRON508_20/'
-  - description: >-
       See how much rye cover crop biomass a Midwesterner can produce, given
       chosen management constraints.
     featuredimage: /img/hex-cc.PNG
@@ -28,5 +21,12 @@ shinies:
     featuredshiny: true
     title: Mustard Seed Soil Compaction
     url: 'https://vanichols.shinyapps.io/MustardSeedPenetrometer/'
+  - description: >-
+      See data visualization projects related to crop biophysics - crop
+      water-use and incoming short-wave radiation visualizations.
+    featuredimage: /img/hex-agron508.PNG
+    featuredshiny: true
+    title: Agron508 Student Viz
+    url: 'https://andyvanl.shinyapps.io/AGRON508_20/'
 ---
 
