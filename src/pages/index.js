@@ -29,7 +29,7 @@ export default class Index extends React.Component {
         <section className = "home-banner">
           <div className="avatar-banner">
             <Avatar/>
-            <p className="home-avatar-name">Virginia Nichols M.S.</p>
+            <p className="home-avatar-name">Virginia (Gina) Nichols </p>
           </div>
           <div className="interests-banner">
             <div className='three-tile-container'>  
