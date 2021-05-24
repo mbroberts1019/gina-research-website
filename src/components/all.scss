@@ -290,10 +290,15 @@ footer{
 .shiny-title{
   text-align: left;
   font-size: 2rem !important;
-  padding-left: 1rem;
+  //padding-left: 1rem;
 }
 .shiny-meta{
   width: 100%;
+  padding-left: 1rem;
+}
+.shiny-header{
+  height: 8.5rem;
+  margin-bottom: -1rem;
 }
 .shiny-anchor{
   color: $black;

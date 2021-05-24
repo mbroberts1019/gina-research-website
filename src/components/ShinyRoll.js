@@ -24,7 +24,7 @@ class ShinyRoll extends React.Component {
                   ${shiny.featuredshiny ? 'is-featured' : ''}
                 `}
               >
-                <header>
+                <header className="shiny-header">
                   {shiny.featuredimage ? (
                     <div className="featured-thumbnail row is-1">
                       <PreviewCompatibleImage
