@@ -30,10 +30,11 @@ The analyses accompanying the datasets are available on [my github page](https:/
 
 ### General Audiences 👶🏽
 
-* [Green Lands Blue Waters](https://greenlandsbluewaters.org) Civic Scientist Series '[The Farmer](https://greenlandsbluewaters.org/civic-scientists-series/#gina-nichols-iowa-state-university)'
-* [A talk](https://www.youtube.com/watch?v=wFpA5J1UEV4&feature=youtu.be) I gave about [Benford's Law](https://en.wikipedia.org/wiki/Benford%27s_law), before the 2020 election nonsense
+* [The Farmer](https://greenlandsbluewaters.org/civic-scientists-series/#gina-nichols-iowa-state-university) - An essay from [Green Lands Blue Waters ](https://greenlandsbluewaters.org)Civic Scientist Series
+* [The Journey to an On-Farm Research Project: A Student's Tale ](https://practicalfarmers.org/2021/04/the-journey-to-an-on-farm-research-project-a-student-s/)- Practical Farmers of Iowa Spring 2021 magazine
 
-### Bicycle videos 🚵🏾‍♂️
+### Ames Bicycle Coalition videos 🚵🏾‍♂️
 
-* Ames Bicycle Coalition [winter biking video](https://www.youtube.com/watch?v=5GLEx-_9PLM)
-* Ames Bicycle Coalition [bicycle safety video](https://www.youtube.com/watch?v=0SDBH19fg9E&feature=youtu.be)
+* [Bike Ames](https://youtu.be/0SDBH19fg9E) - Yeah (charming winter biking video starring yours truly
+* [Solving the Puzzle](https://youtu.be/0SDBH19fg9E) - (noir bicycle video)
+* [Bicycle Duel at the Depot](https://youtu.be/t3v3OrILYQM) - (inspired by the Grand Master)
