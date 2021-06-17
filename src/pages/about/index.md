@@ -32,9 +32,12 @@ The analyses accompanying the datasets are available on [my github page](https:/
 
 * [The Farmer](https://greenlandsbluewaters.org/civic-scientists-series/#gina-nichols-iowa-state-university) - An essay from [Green Lands Blue Waters ](https://greenlandsbluewaters.org)Civic Scientist Series
 * [The Journey to an On-Farm Research Project: A Student's Tale ](https://practicalfarmers.org/2021/04/the-journey-to-an-on-farm-research-project-a-student-s/)- Practical Farmers of Iowa Spring 2021 magazine
+* [Cover crops - the gardener's quiet weed fighter](https://sustainable-secure-food-blog.com/2021/03/22/how-can-you-prevent-weed-seeds-from-germinating-in-your-garden/
+)- Sustainable, Secure Food Blog
+
 
 ### Ames Bicycle Coalition videos 🚵🏾‍♂️
 
-* [Bike Ames](https://youtu.be/0SDBH19fg9E) - Yeah (charming winter biking video starring yours truly
+* [Bike Ames Yeah!](https://youtu.be/0SDBH19fg9E) - (charming winter biking video starring yours truly)
 * [Solving the Puzzle](https://youtu.be/0SDBH19fg9E) - (noir bicycle video)
 * [Bicycle Duel at the Depot](https://youtu.be/t3v3OrILYQM) - (inspired by the Grand Master)
