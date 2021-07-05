@@ -391,6 +391,21 @@ $menu-label-color: $white-ter;;
   height: 10rem;
   width: 10rem;
 }
+
+@media only screen and (max-device-width: 1024px){
+  .home-banner-tile{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px){
+  .home-banner-tile{
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
 @import "~bulma";
 
 // responsiveness
@@ -398,6 +413,7 @@ $menu-label-color: $white-ter;;
   .blog-list-item .featured-thumbnail{
     flex-basis: 50%;
     }
+
 +mobile
   .blog-list-item header{
     display: block;
@@ -406,4 +422,6 @@ $menu-label-color: $white-ter;;
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
-}
+    }
+
+
