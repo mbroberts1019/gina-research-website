@@ -7,7 +7,6 @@ const Navbar = () => {
   const [hamburgerState, setHamburgerState] = useState('')
 
   const toggleHamburger = () => {
-    // toggle the active boolean in the state
     (hamburgerState == '') ? setHamburgerState('is-active') : setHamburgerState('')
   }
 
