@@ -3,7 +3,7 @@ import getJokes from "../../dad_jokes/dadJokes"
 
 const defaultJoke = {
     setup: "Do you like Dad jokes?",
-    punchline: "Too bad, they're coming"
+    punchline: "Too bad, they're on the way"
 }
 
 const Joke = () => {
